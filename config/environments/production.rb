@@ -86,7 +86,7 @@ Rails.application.configure do
   config.action_cable.mount_path = '/cable'
   config.action_cable.url = 'wss://serene-fortress-97910.herokuapp.com/cable'
   config.web_socket_server_url = 'wss://serene-fortress-97910.herokuapp.com/cable'
-  config.action_cable.allowed_request_origins = ['*']
+  config.action_cable.allowed_request_origins = [/http:\/\/*/, /https:\/\/*/]
   config.action_cable.disable_request_forgery_protection = true
   #config.action_cable.allowed_request_origins = [ '*' ]
   #config.action_cable.allowed_request_origins = ['https://serene-fortress-97910.herokuapp.com/', 'http://serene-fortress-97910.herokuapp.com/']
