@@ -1,7 +1,8 @@
 # README
 
-#Author: Danny Le
-#Date: March 2nd, 2021
+* Author: Danny Le
+
+* Date: March 2nd, 2021
 
 ## Table of contents
 * [General info](#general-info)
