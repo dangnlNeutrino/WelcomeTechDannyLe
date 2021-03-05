@@ -8,7 +8,7 @@
 * [System Dependencies](#technologies)
 * [Installation](#Installation)
 * [Approach](#approach)
-* [Execution](#execution)
+* [Deployment Instruction](#execution)
 * [Testing](#Testing)
 
 ## General Info
@@ -19,9 +19,11 @@ The live demo can be found here: [https://serene-fortress-97910.herokuapp.com ]
 
 * Ruby version: 2.5.0
 
-* Ruby version: 16.12.0
+* React version: 16.12.0
 
 * PostGreSQL
+
+* Redis 3.2
 
 ## Installation
 To install project's dependencies, install it locally using Rails:
@@ -30,19 +32,16 @@ To install project's dependencies, install it locally using Rails:
 bundle install
 rake db:create
 rake db:migrate
+
+start rails server: rails server or rails s
 ```
 
+## Approach
+* Full-featured chat application using Ruby on Rails back-end and ReactJS front-end. Integrated with PostGreSQL and Redis for asynchronous features and users management.
 
-* Configuration
+* User management features: sign-up, JWT authentication, forgot password.
 
-* Database creation
+## Deployment Instruction
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
 
 * ...
