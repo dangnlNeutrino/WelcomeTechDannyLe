@@ -1,8 +1,8 @@
 class MessageRoomsSerializer < ActiveModel::Serializer
-  attributes :id, :room_name, :get_owner
+  attributes :id, :get_room_name, :get_owner
   has_many :messages, serializer: MessagesSerializer
 
-  def room_name
+  def get_room_name
   	return object.room_name
   end
 

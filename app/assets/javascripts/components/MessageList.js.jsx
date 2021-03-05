@@ -12,7 +12,7 @@ class MessageList extends React.Component {
     return messages.map((message, index) =>
       
       <div className="col-sm-12" key={ index }>
-        <p className="message-text">
+        <p className="msg_cotainer">
           
           <span> { message.get_email }  at { message.written_at } : </span>
           <br/>

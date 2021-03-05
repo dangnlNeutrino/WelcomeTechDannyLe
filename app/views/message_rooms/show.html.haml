@@ -1,7 +1,8 @@
+%container{:class => "wrapper fadeInDown"}
 %h2.text-center
   = @message_room.room_name
   %br
-  %small
-    = link_to 'Back', message_rooms_path, class: 'btn btn-primary btn-sx'
+  %small 
+    = link_to 'Back', message_rooms_path, class: 'btn btn-primary btn-sx'  
 
 = react_component('MessageRoom', { message_room: @json_object })
