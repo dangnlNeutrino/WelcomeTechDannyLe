@@ -52,5 +52,8 @@ Rails.application.configure do
   # routes, locales, etc. This feature depends on the listen gem.
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
 
-  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+  #config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+  
+  config.web_socket_server_url = "wss://serene-fortress-97910.herokuapp.com/cable" 
+  config.action_cable.allowed_request_origins = ['https://serene-fortress-97910.herokuapp.com/', 'http://serene-fortress-97910.herokuapp.com/']
 end
