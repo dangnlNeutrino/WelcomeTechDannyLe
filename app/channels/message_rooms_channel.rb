@@ -1,10 +1,10 @@
-class ChatRoomsChannel < ApplicationCable::Channel
+class MessageRoomsChannel < ApplicationCable::Channel
 
   #if user joins a channel, they will be automatically 
   #subscribed to that channel
   #route broadcasting to the subscriber via stream
   def subscribed
-    stream_from "message_room_#{params['message_room']}_channel"
+    stream_from "message_rooms_#{params['message_room_id']}_channel"
   end
 
   #Auto unsubscribe from channel

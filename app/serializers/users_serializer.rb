@@ -1,7 +1,7 @@
 class UsersSerializer < ActiveModel::Serializer
-  attributes :id. :full_name
+  attributes :id, :get_email
 
-  def get_full_name
-  	return object.first_name + " " + object.last_name
+  def get_email
+  	return object.email
   end
 end

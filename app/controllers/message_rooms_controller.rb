@@ -11,8 +11,8 @@ class MessageRoomsController < ApplicationController
 
 	#get a specfic 
 	def show
-		@message_room = MessageRoom.find(params[:room_name])
-		@json = MessageRoomSerializer.new(@message_room).as_json
+		@message_room = MessageRoom.find(params[:id])
+		@json_object = MessageRoomsSerializer.new(@message_room).as_json
 	end
 
 	def new
@@ -23,7 +23,7 @@ class MessageRoomsController < ApplicationController
 		@message_room = current_user.message_rooms.new(room_params)
 		if @message_room.save
 			flash[:success] = "Successuflly created new message room"
-			redirect_to message_room_path
+			redirect_to message_rooms_path
 		else
 			render 'new'
 		end

@@ -1,0 +1,24 @@
+%h2.text-center
+  Welcome Tech's Message Rooms
+  %br
+  %small
+    = link_to 'New message room', new_message_room_path, class: 'btn btn-primary btn-sx'
+
+%table.table.table-hover
+  %thead
+    %tr
+      %th Title
+      %th Owner
+      %th Date Created
+      %th Action
+  %tbody
+    - @message_rooms.each do |message_room|
+      %tr
+        %td
+          = message_room.room_name
+        %td
+          = message_room.owner
+        %td
+          = message_room.created_at
+        %td
+          = link_to "Enter", message_room_path(message_room), class: "btn btn-sm btn-primary"

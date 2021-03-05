@@ -18,7 +18,7 @@ class MessageRoomDecorator < Draper::Decorator
 	#@params: Nil
 	#@returns: concatinated string by first and last name
 	def owner
-		object.user.first_name + " " + object.user.last_name
+		object.user.email
 	end
 
 end
