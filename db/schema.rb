@@ -12,12 +12,15 @@
 
 ActiveRecord::Schema.define(version: 20210302074942) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "message_rooms", force: :cascade do |t|
     t.string   "room_name"
     t.integer  "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["user_id"], name: "index_message_rooms_on_user_id"
+    t.index ["user_id"], name: "index_message_rooms_on_user_id", using: :btree
   end
 
   create_table "messages", force: :cascade do |t|
@@ -26,8 +29,8 @@ ActiveRecord::Schema.define(version: 20210302074942) do
     t.integer  "message_room_id"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
-    t.index ["message_room_id"], name: "index_messages_on_message_room_id"
-    t.index ["user_id"], name: "index_messages_on_user_id"
+    t.index ["message_room_id"], name: "index_messages_on_message_room_id", using: :btree
+    t.index ["user_id"], name: "index_messages_on_user_id", using: :btree
   end
 
   create_table "users", force: :cascade do |t|
@@ -40,8 +43,11 @@ ActiveRecord::Schema.define(version: 20210302074942) do
     t.datetime "remember_created_at"
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
-    t.index ["email"], name: "index_users_on_email", unique: true
-    t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
+    t.index ["email"], name: "index_users_on_email", unique: true, using: :btree
+    t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
   end
 
+  add_foreign_key "message_rooms", "users"
+  add_foreign_key "messages", "message_rooms"
+  add_foreign_key "messages", "users"
 end
