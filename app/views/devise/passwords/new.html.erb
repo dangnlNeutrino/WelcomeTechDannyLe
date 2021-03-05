@@ -1,4 +1,11 @@
-<h2>Forgot your password?</h2>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<link href="../../assets/login.css" rel="stylesheet" id="bootstrap-css">
+
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+
+<h2>Password Recovery</h2>
 
 <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>
@@ -9,8 +16,17 @@
   </div>
 
   <div class="actions">
-    <%= f.submit "Send me reset password instructions" %>
+    <%= f.submit "Reset password" %>
   </div>
+
+  <!-- Forgot Passowrd -->
+	<div id="formFooter">
+	  <%= render "devise/shared/links" %>
+	</div>
 <% end %>
 
-<%= render "devise/shared/links" %>
+
+  
+
+  </div>
+</div>
