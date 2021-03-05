@@ -83,5 +83,5 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
-  config.web_socket_server_url = "https://serene-fortress-97910.herokuapp.com/" 
+  config.web_socket_server_url = "wss://serene-fortress-97910.herokuapp.com/cable" 
 end
