@@ -1,13 +1,37 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+#Author: Danny Le
+#Date: March 2nd, 2021
 
-Things you may want to cover:
+## Table of contents
+* [General info](#general-info)
+* [System Dependencies](#technologies)
+* [Installation](#Installation)
+* [Approach](#approach)
+* [Execution](#execution)
+* [Testing](#Testing)
 
-* Ruby version
+## General Info
 
-* System dependencies
+The live demo can be found here: [https://serene-fortress-97910.herokuapp.com ]
+
+## System Dependencies
+
+* Ruby version: 2.5.0
+
+* Ruby version: 16.12.0
+
+* PostGreSQL
+
+## Installation
+To install project's dependencies, install it locally using Rails:
+
+```
+bundle install
+rake db:create
+rake db:migrate
+```
+
 
 * Configuration
 
