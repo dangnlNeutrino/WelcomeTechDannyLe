@@ -2475,3 +2475,32 @@ D, [2021-03-05T23:21:28.982674 #20417] DEBUG -- : [7be9bccf-32f0-46da-8222-e0a23
 D, [2021-03-05T23:21:28.983414 #20417] DEBUG -- : [7be9bccf-32f0-46da-8222-e0a2325eb69d]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
 I, [2021-03-05T23:21:28.983760 #20417]  INFO -- : [7be9bccf-32f0-46da-8222-e0a2325eb69d]   Rendered message_rooms/index.html.haml within layouts/application (11.2ms)
 I, [2021-03-05T23:21:28.984412 #20417]  INFO -- : [7be9bccf-32f0-46da-8222-e0a2325eb69d] Completed 200 OK in 16ms (Views: 11.3ms | ActiveRecord: 1.0ms)
+I, [2021-03-05T23:29:40.534621 #21052]  INFO -- : [0b08c9a0-e249-4282-af11-1fdadd97be6c] Started GET "/message_rooms" for 127.0.0.1 at 2021-03-05 23:29:40 -0800
+I, [2021-03-05T23:29:40.545412 #21052]  INFO -- : [0b08c9a0-e249-4282-af11-1fdadd97be6c] Processing by MessageRoomsController#index as HTML
+D, [2021-03-05T23:29:40.579634 #21052] DEBUG -- : [0b08c9a0-e249-4282-af11-1fdadd97be6c]   [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+I, [2021-03-05T23:29:40.600827 #21052]  INFO -- : [0b08c9a0-e249-4282-af11-1fdadd97be6c]   Rendering message_rooms/index.html.haml within layouts/application
+D, [2021-03-05T23:29:40.610492 #21052] DEBUG -- : [0b08c9a0-e249-4282-af11-1fdadd97be6c]   [1m[36mMessageRoom Load (1.0ms)[0m  [1m[34mSELECT "message_rooms".* FROM "message_rooms"[0m
+D, [2021-03-05T23:29:40.623358 #21052] DEBUG -- : [0b08c9a0-e249-4282-af11-1fdadd97be6c]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-05T23:29:40.625035 #21052] DEBUG -- : [0b08c9a0-e249-4282-af11-1fdadd97be6c]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-05T23:29:40.626800 #21052] DEBUG -- : [0b08c9a0-e249-4282-af11-1fdadd97be6c]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-05T23:29:40.628731 #21052] DEBUG -- : [0b08c9a0-e249-4282-af11-1fdadd97be6c]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-05T23:29:40.630115 #21052] DEBUG -- : [0b08c9a0-e249-4282-af11-1fdadd97be6c]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-05T23:29:40.631522 #21052] DEBUG -- : [0b08c9a0-e249-4282-af11-1fdadd97be6c]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-05T23:29:40.633461 #21052] DEBUG -- : [0b08c9a0-e249-4282-af11-1fdadd97be6c]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+I, [2021-03-05T23:29:40.633871 #21052]  INFO -- : [0b08c9a0-e249-4282-af11-1fdadd97be6c]   Rendered message_rooms/index.html.haml within layouts/application (32.9ms)
+I, [2021-03-05T23:29:40.643593 #21052]  INFO -- : [0b08c9a0-e249-4282-af11-1fdadd97be6c] Completed 200 OK in 98ms (Views: 46.8ms | ActiveRecord: 16.8ms)
+I, [2021-03-05T23:29:43.200530 #21052]  INFO -- : [cf673036-7a6f-467e-ad73-fc9ad33414f6] Started GET "/message_rooms/1" for 127.0.0.1 at 2021-03-05 23:29:43 -0800
+I, [2021-03-05T23:29:43.201470 #21052]  INFO -- : [cf673036-7a6f-467e-ad73-fc9ad33414f6] Processing by MessageRoomsController#show as HTML
+I, [2021-03-05T23:29:43.201583 #21052]  INFO -- : [cf673036-7a6f-467e-ad73-fc9ad33414f6]   Parameters: {"id"=>"1"}
+D, [2021-03-05T23:29:43.203176 #21052] DEBUG -- : [cf673036-7a6f-467e-ad73-fc9ad33414f6]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-05T23:29:43.204498 #21052] DEBUG -- : [cf673036-7a6f-467e-ad73-fc9ad33414f6]   [1m[36mMessageRoom Load (0.2ms)[0m  [1m[34mSELECT  "message_rooms".* FROM "message_rooms" WHERE "message_rooms"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-05T23:29:43.205839 #21052] DEBUG -- : [cf673036-7a6f-467e-ad73-fc9ad33414f6]   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-05T23:29:43.211816 #21052] DEBUG -- : [cf673036-7a6f-467e-ad73-fc9ad33414f6]   [1m[36mMessage Load (1.7ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."message_room_id" = $1[0m  [["message_room_id", 1]]
+I, [2021-03-05T23:29:43.216967 #21052]  INFO -- : [cf673036-7a6f-467e-ad73-fc9ad33414f6]   Rendering message_rooms/show.html.haml within layouts/application
+I, [2021-03-05T23:29:43.219417 #21052]  INFO -- : [cf673036-7a6f-467e-ad73-fc9ad33414f6]   Rendered message_rooms/show.html.haml within layouts/application (2.2ms)
+I, [2021-03-05T23:29:43.220470 #21052]  INFO -- : [cf673036-7a6f-467e-ad73-fc9ad33414f6] Completed 200 OK in 19ms (Views: 3.7ms | ActiveRecord: 3.6ms)
+I, [2021-03-05T23:29:43.253577 #21052]  INFO -- : [42c62433-0afc-4f41-a572-c4676b8fee3e] Started GET "/cable" for 127.0.0.1 at 2021-03-05 23:29:43 -0800
+I, [2021-03-05T23:29:43.293035 #21052]  INFO -- : [42c62433-0afc-4f41-a572-c4676b8fee3e] Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-03-05 23:29:43 -0800
+I, [2021-03-05T23:29:43.293104 #21052]  INFO -- : [42c62433-0afc-4f41-a572-c4676b8fee3e] Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+D, [2021-03-05T23:29:43.298580 #21052] DEBUG -- :   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+I, [2021-03-05T23:29:43.299191 #21052]  INFO -- : [ActionCable] [b@yahoo.com] Registered connection (Z2lkOi8vd2VsY29tZS10ZWNoLWNoYXQtYXBwL1VzZXIvMQ)
