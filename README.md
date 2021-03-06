@@ -17,6 +17,8 @@ Chat application challenge for Welcome Tech's trial.
 
 Full-featured chat application using Ruby on Rails back-end and ReactJS front-end. Integrated with PostGreSQL and Redis for asynchronous features and users management.
 
+All developments are done on the `develop` branch and merged into `main` after reviews and tests.
+
 The live demo can be found here: [https://serene-fortress-97910.herokuapp.com ]
 
 ## System Dependencies
