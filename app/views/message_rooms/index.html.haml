@@ -15,7 +15,7 @@
     - @message_rooms.each do |message_room|
       %tr
         %td
-          = message_room.room_name
+          = message_room.get_room_name
         %td
           = message_room.owner
         %td

@@ -10,7 +10,7 @@ class MessageRoomDecorator < Draper::Decorator
 	#@returns: The time when the object was created
 	def created_at
 	  helpers.content_tag :span, class: 'time' do
-	    object.created_at.strftime("%a %m/%d/%y")
+	    return object.created_at.strftime("%a %m/%d/%y")
 	  end
 	end
 
@@ -18,7 +18,14 @@ class MessageRoomDecorator < Draper::Decorator
 	#@params: Nil
 	#@returns: concatinated string by first and last name
 	def owner
-		object.user.email
+		return object.user.email
+	end
+
+	#grab the owner the object
+	#@params: Nil
+	#@returns: concatinated string by first and last name
+	def get_room_name
+		return object.room_name
 	end
 
 end

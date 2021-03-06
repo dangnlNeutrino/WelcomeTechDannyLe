@@ -1,12 +1,14 @@
-%container{:class => "wrapper fadeInDown"}
+%div{:class => "wrapper fadeInDown" }
   %h2.text-center Create New Message Room
   %br
   %small
-    = link_to 'Back', message_rooms_path, class: 'btn btn-primary btn-sx'
-    
+    = link_to 'Back', message_rooms_path, class: 'btn btn-primary btn-sx' 
+
 = form_for @message_room do |f|
   .form-group
-    = f.label :title
-    = f.text_field :id, autofocus: true, class: 'form-control'
+    = f.label :room_name
+    = f.text_field :room_name, autofocus: true, class: 'form-control'
+    %center
+      = f.submit "Save", class: 'btn btn-primary btn-sx'
 
-  = f.submit "Save", class: 'btn btn-primary'
+
