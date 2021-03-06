@@ -13,6 +13,9 @@
 * [Testing](#Testing)
 
 ## General Info
+Chat application challenge for Welcome Tech's trial.
+
+Full-featured chat application using Ruby on Rails back-end and ReactJS front-end. Integrated with PostGreSQL and Redis for asynchronous features and users management.
 
 The live demo can be found here: [https://serene-fortress-97910.herokuapp.com ]
 
@@ -42,7 +45,12 @@ start rails server: rails server or rails s
 
 * User management features: sign-up, JWT authentication, forgot password.
 
+* Front-end and back-end integration with Redis, ActionCable for async chat. (Can be integrated w/ RestAPI as well.)
+
 ## Deployment Instruction
 
+```
+git push heroku <main-branch>
+```
 
 * ...
