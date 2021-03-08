@@ -2949,3 +2949,107 @@ D, [2021-03-07T20:39:58.910123 #33301] DEBUG -- :   [1m[36mActiveRecord::Inter
 D, [2021-03-07T20:39:58.912436 #33301] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
 D, [2021-03-07T20:39:58.913054 #33301] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
 D, [2021-03-07T20:39:58.913258 #33301] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(6549283951149397185)[0m
+I, [2021-03-07T22:15:22.085273 #39423]  INFO -- : [27239912-94e5-4ba5-a534-3b66b1e88199] Started GET "/" for 127.0.0.1 at 2021-03-07 22:15:22 -0800
+I, [2021-03-07T22:15:22.107247 #39423]  INFO -- : [27239912-94e5-4ba5-a534-3b66b1e88199] Processing by MessageRoomsController#index as HTML
+D, [2021-03-07T22:15:22.228569 #39423] DEBUG -- : [27239912-94e5-4ba5-a534-3b66b1e88199]   [1m[36mUser Load (3.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+I, [2021-03-07T22:15:22.240795 #39423]  INFO -- : [27239912-94e5-4ba5-a534-3b66b1e88199] Completed 401 Unauthorized in 133ms (ActiveRecord: 100.5ms)
+I, [2021-03-07T22:15:23.225714 #39423]  INFO -- : [b3e3e0b1-8a61-414f-8bff-ddbd96a75b6f] Started GET "/users/sign_in" for 127.0.0.1 at 2021-03-07 22:15:23 -0800
+I, [2021-03-07T22:15:23.226627 #39423]  INFO -- : [b3e3e0b1-8a61-414f-8bff-ddbd96a75b6f] Processing by Devise::SessionsController#new as HTML
+I, [2021-03-07T22:15:23.242573 #39423]  INFO -- : [b3e3e0b1-8a61-414f-8bff-ddbd96a75b6f]   Rendering devise/sessions/new.html.erb within layouts/application
+I, [2021-03-07T22:15:23.248636 #39423]  INFO -- : [b3e3e0b1-8a61-414f-8bff-ddbd96a75b6f]   Rendered devise/shared/_links.html.erb (0.9ms)
+I, [2021-03-07T22:15:23.248719 #39423]  INFO -- : [b3e3e0b1-8a61-414f-8bff-ddbd96a75b6f]   Rendered devise/sessions/new.html.erb within layouts/application (6.1ms)
+I, [2021-03-07T22:15:23.251335 #39423]  INFO -- : [b3e3e0b1-8a61-414f-8bff-ddbd96a75b6f] Completed 200 OK in 25ms (Views: 22.5ms | ActiveRecord: 0.0ms)
+I, [2021-03-07T22:15:23.281295 #39423]  INFO -- : [9c79ba1c-809d-487a-ac01-ab329f166563] Started GET "/assets/application-d25923c40190a9051a8f8411b14dc7571160455efc1c509e9d434581b920113c.css" for 127.0.0.1 at 2021-03-07 22:15:23 -0800
+I, [2021-03-07T22:15:23.386471 #39423]  INFO -- : [fddc9590-0130-42b8-9c97-ec2998dcd138] Started GET "/assets/application-fbe84871b5a015fcc7157d9cadd29f44a5d0766d483724a33e9d22b0e51d5b0b.js" for 127.0.0.1 at 2021-03-07 22:15:23 -0800
+I, [2021-03-07T22:15:23.691248 #39423]  INFO -- : [7564c302-d5ed-4c56-9102-827c4896aa14] Started GET "/assets/login.css" for 127.0.0.1 at 2021-03-07 22:15:23 -0800
+I, [2021-03-07T22:15:23.794374 #39423]  INFO -- : [5290214e-d7cc-4c43-a6e6-602f027f657b] Started GET "/assets/jquery-1.11.1.min.js" for 127.0.0.1 at 2021-03-07 22:15:23 -0800
+I, [2021-03-07T22:15:23.794891 #39423]  INFO -- : [ab9c95b0-c30a-4aad-b7d2-a193ed770dea] Started GET "/assets/bootstrap.min.js" for 127.0.0.1 at 2021-03-07 22:15:23 -0800
+F, [2021-03-07T22:15:23.916451 #39423] FATAL -- : [5290214e-d7cc-4c43-a6e6-602f027f657b]   
+F, [2021-03-07T22:15:23.916975 #39423] FATAL -- : [5290214e-d7cc-4c43-a6e6-602f027f657b] ActionController::RoutingError (No route matches [GET] "/assets/jquery-1.11.1.min.js"):
+F, [2021-03-07T22:15:23.917259 #39423] FATAL -- : [5290214e-d7cc-4c43-a6e6-602f027f657b]   
+F, [2021-03-07T22:15:23.917708 #39423] FATAL -- : [5290214e-d7cc-4c43-a6e6-602f027f657b] actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+[5290214e-d7cc-4c43-a6e6-602f027f657b] actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[5290214e-d7cc-4c43-a6e6-602f027f657b] railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+[5290214e-d7cc-4c43-a6e6-602f027f657b] railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+[5290214e-d7cc-4c43-a6e6-602f027f657b] activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[5290214e-d7cc-4c43-a6e6-602f027f657b] activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+[5290214e-d7cc-4c43-a6e6-602f027f657b] activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+[5290214e-d7cc-4c43-a6e6-602f027f657b] railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+[5290214e-d7cc-4c43-a6e6-602f027f657b] request_store (1.5.0) lib/request_store/middleware.rb:19:in `call'
+[5290214e-d7cc-4c43-a6e6-602f027f657b] actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+[5290214e-d7cc-4c43-a6e6-602f027f657b] rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+[5290214e-d7cc-4c43-a6e6-602f027f657b] rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+[5290214e-d7cc-4c43-a6e6-602f027f657b] activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+[5290214e-d7cc-4c43-a6e6-602f027f657b] actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+[5290214e-d7cc-4c43-a6e6-602f027f657b] rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+[5290214e-d7cc-4c43-a6e6-602f027f657b] railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+[5290214e-d7cc-4c43-a6e6-602f027f657b] puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+[5290214e-d7cc-4c43-a6e6-602f027f657b] puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+[5290214e-d7cc-4c43-a6e6-602f027f657b] puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+[5290214e-d7cc-4c43-a6e6-602f027f657b] puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+[5290214e-d7cc-4c43-a6e6-602f027f657b] puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+I, [2021-03-07T22:15:24.139877 #39423]  INFO -- : [e6aac1f3-c44c-4731-a597-db4a0c9673a3] Started GET "/assets/chat3.png" for 127.0.0.1 at 2021-03-07 22:15:24 -0800
+I, [2021-03-07T22:15:24.673423 #39423]  INFO -- : [f335107a-fd3f-4328-9b77-37c9892336f0] Started GET "/assets/jquery-1.11.1.min.js" for 127.0.0.1 at 2021-03-07 22:15:24 -0800
+F, [2021-03-07T22:15:24.675720 #39423] FATAL -- : [f335107a-fd3f-4328-9b77-37c9892336f0]   
+F, [2021-03-07T22:15:24.675797 #39423] FATAL -- : [f335107a-fd3f-4328-9b77-37c9892336f0] ActionController::RoutingError (No route matches [GET] "/assets/jquery-1.11.1.min.js"):
+F, [2021-03-07T22:15:24.675833 #39423] FATAL -- : [f335107a-fd3f-4328-9b77-37c9892336f0]   
+F, [2021-03-07T22:15:24.675872 #39423] FATAL -- : [f335107a-fd3f-4328-9b77-37c9892336f0] actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+[f335107a-fd3f-4328-9b77-37c9892336f0] actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[f335107a-fd3f-4328-9b77-37c9892336f0] railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+[f335107a-fd3f-4328-9b77-37c9892336f0] railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+[f335107a-fd3f-4328-9b77-37c9892336f0] activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[f335107a-fd3f-4328-9b77-37c9892336f0] activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+[f335107a-fd3f-4328-9b77-37c9892336f0] activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+[f335107a-fd3f-4328-9b77-37c9892336f0] railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+[f335107a-fd3f-4328-9b77-37c9892336f0] request_store (1.5.0) lib/request_store/middleware.rb:19:in `call'
+[f335107a-fd3f-4328-9b77-37c9892336f0] actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+[f335107a-fd3f-4328-9b77-37c9892336f0] rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+[f335107a-fd3f-4328-9b77-37c9892336f0] rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+[f335107a-fd3f-4328-9b77-37c9892336f0] activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+[f335107a-fd3f-4328-9b77-37c9892336f0] actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+[f335107a-fd3f-4328-9b77-37c9892336f0] rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+[f335107a-fd3f-4328-9b77-37c9892336f0] railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+[f335107a-fd3f-4328-9b77-37c9892336f0] puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+[f335107a-fd3f-4328-9b77-37c9892336f0] puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+[f335107a-fd3f-4328-9b77-37c9892336f0] puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+[f335107a-fd3f-4328-9b77-37c9892336f0] puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+[f335107a-fd3f-4328-9b77-37c9892336f0] puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+I, [2021-03-07T22:15:29.441894 #39423]  INFO -- : [da312d7c-949b-43ef-8017-181f3ad78aaf] Started POST "/users/sign_in" for 127.0.0.1 at 2021-03-07 22:15:29 -0800
+I, [2021-03-07T22:15:29.442817 #39423]  INFO -- : [da312d7c-949b-43ef-8017-181f3ad78aaf] Processing by Devise::SessionsController#create as HTML
+I, [2021-03-07T22:15:29.442923 #39423]  INFO -- : [da312d7c-949b-43ef-8017-181f3ad78aaf]   Parameters: {"utf8"=>"✓", "authenticity_token"=>"jcEGXhJqZSJUEzsbL6tWGPqPovbJ0PGxGriMTXOngH7j9YxFEle2v7SWc/PUoSavEN+h9S7kM4706TymOxahuQ==", "user"=>{"email"=>"b@yahoo.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+D, [2021-03-07T22:15:29.446666 #39423] DEBUG -- : [da312d7c-949b-43ef-8017-181f3ad78aaf]   [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "b@yahoo.com"], ["LIMIT", 1]]
+I, [2021-03-07T22:15:29.593722 #39423]  INFO -- : [da312d7c-949b-43ef-8017-181f3ad78aaf] Redirected to http://localhost:3000/
+I, [2021-03-07T22:15:29.593926 #39423]  INFO -- : [da312d7c-949b-43ef-8017-181f3ad78aaf] Completed 302 Found in 151ms (ActiveRecord: 0.5ms)
+I, [2021-03-07T22:15:29.598175 #39423]  INFO -- : [998b540e-5d77-42c5-8d54-57920c2d7785] Started GET "/" for 127.0.0.1 at 2021-03-07 22:15:29 -0800
+I, [2021-03-07T22:15:29.598767 #39423]  INFO -- : [998b540e-5d77-42c5-8d54-57920c2d7785] Processing by MessageRoomsController#index as HTML
+D, [2021-03-07T22:15:29.600053 #39423] DEBUG -- : [998b540e-5d77-42c5-8d54-57920c2d7785]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+I, [2021-03-07T22:15:29.607107 #39423]  INFO -- : [998b540e-5d77-42c5-8d54-57920c2d7785]   Rendering message_rooms/index.html.haml within layouts/application
+D, [2021-03-07T22:15:29.610761 #39423] DEBUG -- : [998b540e-5d77-42c5-8d54-57920c2d7785]   [1m[36mMessageRoom Load (0.5ms)[0m  [1m[34mSELECT "message_rooms".* FROM "message_rooms"[0m
+D, [2021-03-07T22:15:29.619892 #39423] DEBUG -- : [998b540e-5d77-42c5-8d54-57920c2d7785]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T22:15:29.621286 #39423] DEBUG -- : [998b540e-5d77-42c5-8d54-57920c2d7785]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T22:15:29.622210 #39423] DEBUG -- : [998b540e-5d77-42c5-8d54-57920c2d7785]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T22:15:29.623141 #39423] DEBUG -- : [998b540e-5d77-42c5-8d54-57920c2d7785]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T22:15:29.623989 #39423] DEBUG -- : [998b540e-5d77-42c5-8d54-57920c2d7785]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T22:15:29.624890 #39423] DEBUG -- : [998b540e-5d77-42c5-8d54-57920c2d7785]   [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T22:15:29.625828 #39423] DEBUG -- : [998b540e-5d77-42c5-8d54-57920c2d7785]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T22:15:29.626986 #39423] DEBUG -- : [998b540e-5d77-42c5-8d54-57920c2d7785]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+I, [2021-03-07T22:15:29.627689 #39423]  INFO -- : [998b540e-5d77-42c5-8d54-57920c2d7785]   Rendered message_rooms/index.html.haml within layouts/application (20.5ms)
+I, [2021-03-07T22:15:29.628773 #39423]  INFO -- : [998b540e-5d77-42c5-8d54-57920c2d7785] Completed 200 OK in 30ms (Views: 23.7ms | ActiveRecord: 2.3ms)
+I, [2021-03-07T22:15:29.792196 #39423]  INFO -- : [ecd4b44d-a92a-4016-b427-27086bad60e6] Started GET "/assets/sort_both.png" for 127.0.0.1 at 2021-03-07 22:15:29 -0800
+I, [2021-03-07T22:15:29.849282 #39423]  INFO -- : [4c83d596-3912-4d9f-976c-4a8003b2ecc3] Started GET "/assets/sort_asc.png" for 127.0.0.1 at 2021-03-07 22:15:29 -0800
+I, [2021-03-07T22:15:33.153928 #39423]  INFO -- : [65b8d259-2f89-45e0-888c-f2d39aa7832a] Started GET "/assets/sort_desc.png" for 127.0.0.1 at 2021-03-07 22:15:33 -0800
+I, [2021-03-07T22:15:37.389816 #39423]  INFO -- : [67ff9f1f-175e-4690-b5c7-0a713c4e67a5] Started GET "/message_rooms/1" for 127.0.0.1 at 2021-03-07 22:15:37 -0800
+I, [2021-03-07T22:15:37.390643 #39423]  INFO -- : [67ff9f1f-175e-4690-b5c7-0a713c4e67a5] Processing by MessageRoomsController#show as HTML
+I, [2021-03-07T22:15:37.390717 #39423]  INFO -- : [67ff9f1f-175e-4690-b5c7-0a713c4e67a5]   Parameters: {"id"=>"1"}
+D, [2021-03-07T22:15:37.392332 #39423] DEBUG -- : [67ff9f1f-175e-4690-b5c7-0a713c4e67a5]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T22:15:37.393722 #39423] DEBUG -- : [67ff9f1f-175e-4690-b5c7-0a713c4e67a5]   [1m[36mMessageRoom Load (0.3ms)[0m  [1m[34mSELECT  "message_rooms".* FROM "message_rooms" WHERE "message_rooms"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T22:15:37.395203 #39423] DEBUG -- : [67ff9f1f-175e-4690-b5c7-0a713c4e67a5]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T22:15:37.401506 #39423] DEBUG -- : [67ff9f1f-175e-4690-b5c7-0a713c4e67a5]   [1m[36mMessage Load (1.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."message_room_id" = $1[0m  [["message_room_id", 1]]
+I, [2021-03-07T22:15:37.404853 #39423]  INFO -- : [67ff9f1f-175e-4690-b5c7-0a713c4e67a5]   Rendering message_rooms/show.html.haml within layouts/application
+I, [2021-03-07T22:15:37.407635 #39423]  INFO -- : [67ff9f1f-175e-4690-b5c7-0a713c4e67a5]   Rendered message_rooms/show.html.haml within layouts/application (2.7ms)
+I, [2021-03-07T22:15:37.408689 #39423]  INFO -- : [67ff9f1f-175e-4690-b5c7-0a713c4e67a5] Completed 200 OK in 18ms (Views: 4.0ms | ActiveRecord: 3.1ms)
+I, [2021-03-07T22:15:37.459283 #39423]  INFO -- : [e195d6a0-8e11-4760-b079-bdc5e0de5304] Started GET "/cable" for 127.0.0.1 at 2021-03-07 22:15:37 -0800
+I, [2021-03-07T22:15:37.498490 #39423]  INFO -- : [e195d6a0-8e11-4760-b079-bdc5e0de5304] Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-03-07 22:15:37 -0800
+I, [2021-03-07T22:15:37.498567 #39423]  INFO -- : [e195d6a0-8e11-4760-b079-bdc5e0de5304] Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+D, [2021-03-07T22:15:37.505600 #39423] DEBUG -- :   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+I, [2021-03-07T22:15:37.506229 #39423]  INFO -- : [ActionCable] [b@yahoo.com] Registered connection (Z2lkOi8vd2VsY29tZS10ZWNoLWNoYXQtYXBwL1VzZXIvMQ)
