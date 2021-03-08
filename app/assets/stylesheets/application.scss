@@ -12,9 +12,12 @@
  *
  *= require_tree .
  *= require_self
+ *= require datatables
  */
 
 @import "bootstrap";
+@import "jquery.dataTables";
+
 
 #chat-box {
   padding:6px 0px;

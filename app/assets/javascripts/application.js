@@ -16,5 +16,29 @@
 //= require turbolinks
 //= require react
 //= require react_ujs
+//= require dataTables
 //= require components
 //= require_tree .
+
+$(document).on('turbolinks:load', function(){
+  $("table[role='datatable']").each(function(){
+    $(this).DataTable({
+        responsive: {
+            details: {
+                type: 'column',
+                target: 'tr'
+            }
+        },
+        columnDefs: [ {
+            className: 'control',
+            orderable: false,
+            targets:   0
+        } ],
+        "lengthMenu": [[10, 25, 50, -1], [10, 25, 50, "All"]]
+    });
+    // Add event listener for opening and closing details
+    
+  });  
+})
+
+

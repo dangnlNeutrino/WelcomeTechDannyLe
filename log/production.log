@@ -2504,3 +2504,448 @@ I, [2021-03-05T23:29:43.293035 #21052]  INFO -- : [42c62433-0afc-4f41-a572-c4676
 I, [2021-03-05T23:29:43.293104 #21052]  INFO -- : [42c62433-0afc-4f41-a572-c4676b8fee3e] Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
 D, [2021-03-05T23:29:43.298580 #21052] DEBUG -- :   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
 I, [2021-03-05T23:29:43.299191 #21052]  INFO -- : [ActionCable] [b@yahoo.com] Registered connection (Z2lkOi8vd2VsY29tZS10ZWNoLWNoYXQtYXBwL1VzZXIvMQ)
+D, [2021-03-07T20:08:24.525797 #32724] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6549283951149397185);[0m
+D, [2021-03-07T20:08:24.536199 #32724] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+D, [2021-03-07T20:08:24.550346 #32724] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+D, [2021-03-07T20:08:24.553055 #32724] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2021-03-07T20:08:24.553753 #32724] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2021-03-07T20:08:24.554024 #32724] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(6549283951149397185)[0m
+D, [2021-03-07T20:08:53.905444 #32741] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6549283951149397185);[0m
+D, [2021-03-07T20:08:53.916649 #32741] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+D, [2021-03-07T20:08:53.926156 #32741] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+D, [2021-03-07T20:08:53.929148 #32741] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2021-03-07T20:08:53.929935 #32741] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2021-03-07T20:08:53.930189 #32741] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(6549283951149397185)[0m
+D, [2021-03-07T20:09:58.596275 #32763] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6549283951149397185);[0m
+D, [2021-03-07T20:09:58.605834 #32763] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+D, [2021-03-07T20:09:58.613723 #32763] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+D, [2021-03-07T20:09:58.616254 #32763] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2021-03-07T20:09:58.616978 #32763] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2021-03-07T20:09:58.617219 #32763] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(6549283951149397185)[0m
+D, [2021-03-07T20:25:26.366221 #32961] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6549283951149397185);[0m
+D, [2021-03-07T20:25:26.375690 #32961] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+D, [2021-03-07T20:25:26.383335 #32961] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+D, [2021-03-07T20:25:26.385669 #32961] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2021-03-07T20:25:26.386341 #32961] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2021-03-07T20:25:26.386562 #32961] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(6549283951149397185)[0m
+I, [2021-03-07T20:25:33.274350 #32967]  INFO -- : [6ab80f2f-1c5b-4fe2-8080-1a789a8ea194] Started GET "/" for 127.0.0.1 at 2021-03-07 20:25:33 -0800
+I, [2021-03-07T20:25:33.284213 #32967]  INFO -- : [6ab80f2f-1c5b-4fe2-8080-1a789a8ea194] Processing by MessageRoomsController#index as HTML
+D, [2021-03-07T20:25:33.314210 #32967] DEBUG -- : [6ab80f2f-1c5b-4fe2-8080-1a789a8ea194]   [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+I, [2021-03-07T20:25:33.325774 #32967]  INFO -- : [6ab80f2f-1c5b-4fe2-8080-1a789a8ea194] Completed 401 Unauthorized in 41ms (ActiveRecord: 12.1ms)
+I, [2021-03-07T20:25:34.291206 #32967]  INFO -- : [e7df2a63-a717-430b-a032-7d964c517ea6] Started GET "/users/sign_in" for 127.0.0.1 at 2021-03-07 20:25:34 -0800
+I, [2021-03-07T20:25:34.292050 #32967]  INFO -- : [e7df2a63-a717-430b-a032-7d964c517ea6] Processing by Devise::SessionsController#new as HTML
+I, [2021-03-07T20:25:34.306521 #32967]  INFO -- : [e7df2a63-a717-430b-a032-7d964c517ea6]   Rendering devise/sessions/new.html.erb within layouts/application
+I, [2021-03-07T20:25:34.312652 #32967]  INFO -- : [e7df2a63-a717-430b-a032-7d964c517ea6]   Rendered devise/shared/_links.html.erb (1.2ms)
+I, [2021-03-07T20:25:34.312747 #32967]  INFO -- : [e7df2a63-a717-430b-a032-7d964c517ea6]   Rendered devise/sessions/new.html.erb within layouts/application (6.1ms)
+I, [2021-03-07T20:25:34.315150 #32967]  INFO -- : [e7df2a63-a717-430b-a032-7d964c517ea6] Completed 200 OK in 23ms (Views: 20.8ms | ActiveRecord: 0.0ms)
+I, [2021-03-07T20:25:34.340152 #32967]  INFO -- : [8e51daf3-1b8f-481f-b061-17c84287ed83] Started GET "/assets/application-56b898b5515e043122bb5f065ea88f72a8d7a19cedbcea9892e66fddea861e02.js" for 127.0.0.1 at 2021-03-07 20:25:34 -0800
+I, [2021-03-07T20:25:34.441942 #32967]  INFO -- : [1d811a88-af24-431f-86a0-c0f7027bc112] Started GET "/assets/jquery-1.11.1.min.js" for 127.0.0.1 at 2021-03-07 20:25:34 -0800
+I, [2021-03-07T20:25:34.644331 #32967]  INFO -- : [04d9c6e6-2ce2-4342-a176-bfc237f37d0c] Started GET "/assets/bootstrap.min.js" for 127.0.0.1 at 2021-03-07 20:25:34 -0800
+I, [2021-03-07T20:25:34.756240 #32967]  INFO -- : [b49455cf-2f52-4f37-b49a-7ae7e11038b8] Started GET "/assets/login.css" for 127.0.0.1 at 2021-03-07 20:25:34 -0800
+I, [2021-03-07T20:25:36.430324 #32967]  INFO -- : [04863d33-388b-400e-b6be-29e7a388faa5] Started GET "/assets/chat3.png" for 127.0.0.1 at 2021-03-07 20:25:36 -0800
+F, [2021-03-07T20:25:40.455955 #32967] FATAL -- : [8e51daf3-1b8f-481f-b061-17c84287ed83]   
+F, [2021-03-07T20:25:40.456026 #32967] FATAL -- : [8e51daf3-1b8f-481f-b061-17c84287ed83] ActionController::RoutingError (No route matches [GET] "/assets/application-56b898b5515e043122bb5f065ea88f72a8d7a19cedbcea9892e66fddea861e02.js"):
+F, [2021-03-07T20:25:40.456051 #32967] FATAL -- : [8e51daf3-1b8f-481f-b061-17c84287ed83]   
+F, [2021-03-07T20:25:40.456090 #32967] FATAL -- : [8e51daf3-1b8f-481f-b061-17c84287ed83] actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+[8e51daf3-1b8f-481f-b061-17c84287ed83] actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[8e51daf3-1b8f-481f-b061-17c84287ed83] railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+[8e51daf3-1b8f-481f-b061-17c84287ed83] railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+[8e51daf3-1b8f-481f-b061-17c84287ed83] activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[8e51daf3-1b8f-481f-b061-17c84287ed83] activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+[8e51daf3-1b8f-481f-b061-17c84287ed83] activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+[8e51daf3-1b8f-481f-b061-17c84287ed83] railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+[8e51daf3-1b8f-481f-b061-17c84287ed83] request_store (1.5.0) lib/request_store/middleware.rb:19:in `call'
+[8e51daf3-1b8f-481f-b061-17c84287ed83] actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+[8e51daf3-1b8f-481f-b061-17c84287ed83] rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+[8e51daf3-1b8f-481f-b061-17c84287ed83] rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+[8e51daf3-1b8f-481f-b061-17c84287ed83] activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+[8e51daf3-1b8f-481f-b061-17c84287ed83] actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+[8e51daf3-1b8f-481f-b061-17c84287ed83] rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+[8e51daf3-1b8f-481f-b061-17c84287ed83] railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+[8e51daf3-1b8f-481f-b061-17c84287ed83] puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+[8e51daf3-1b8f-481f-b061-17c84287ed83] puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+[8e51daf3-1b8f-481f-b061-17c84287ed83] puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+[8e51daf3-1b8f-481f-b061-17c84287ed83] puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+[8e51daf3-1b8f-481f-b061-17c84287ed83] puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+I, [2021-03-07T20:25:53.046911 #32967]  INFO -- : [702e4e92-aa03-44da-9f30-5ad23a65474e] Started POST "/users/sign_in" for 127.0.0.1 at 2021-03-07 20:25:53 -0800
+I, [2021-03-07T20:25:53.047893 #32967]  INFO -- : [702e4e92-aa03-44da-9f30-5ad23a65474e] Processing by Devise::SessionsController#create as HTML
+I, [2021-03-07T20:25:53.047977 #32967]  INFO -- : [702e4e92-aa03-44da-9f30-5ad23a65474e]   Parameters: {"utf8"=>"✓", "authenticity_token"=>"jUb/U8tDZ14fn699eckw4WiiM6qc6g1fCgGYhhiG/4VjLhrDElZabr6RNvP6Je5bo8uM3QUvyNEHC3uWPZ25vQ==", "user"=>{"email"=>"b@yahoo.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+D, [2021-03-07T20:25:53.051902 #32967] DEBUG -- : [702e4e92-aa03-44da-9f30-5ad23a65474e]   [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "b@yahoo.com"], ["LIMIT", 1]]
+I, [2021-03-07T20:25:53.184471 #32967]  INFO -- : [702e4e92-aa03-44da-9f30-5ad23a65474e] Redirected to http://localhost:3000/
+I, [2021-03-07T20:25:53.184668 #32967]  INFO -- : [702e4e92-aa03-44da-9f30-5ad23a65474e] Completed 302 Found in 137ms (ActiveRecord: 0.5ms)
+I, [2021-03-07T20:25:53.188823 #32967]  INFO -- : [5548aaf7-702e-4849-a718-ca8049bff75c] Started GET "/" for 127.0.0.1 at 2021-03-07 20:25:53 -0800
+I, [2021-03-07T20:25:53.189305 #32967]  INFO -- : [5548aaf7-702e-4849-a718-ca8049bff75c] Processing by MessageRoomsController#index as HTML
+D, [2021-03-07T20:25:53.190435 #32967] DEBUG -- : [5548aaf7-702e-4849-a718-ca8049bff75c]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+I, [2021-03-07T20:25:53.196829 #32967]  INFO -- : [5548aaf7-702e-4849-a718-ca8049bff75c]   Rendering message_rooms/index.html.haml within layouts/application
+D, [2021-03-07T20:25:53.199615 #32967] DEBUG -- : [5548aaf7-702e-4849-a718-ca8049bff75c]   [1m[36mMessageRoom Load (0.4ms)[0m  [1m[34mSELECT "message_rooms".* FROM "message_rooms"[0m
+D, [2021-03-07T20:25:53.207572 #32967] DEBUG -- : [5548aaf7-702e-4849-a718-ca8049bff75c]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:25:53.208717 #32967] DEBUG -- : [5548aaf7-702e-4849-a718-ca8049bff75c]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:25:53.209449 #32967] DEBUG -- : [5548aaf7-702e-4849-a718-ca8049bff75c]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:25:53.210168 #32967] DEBUG -- : [5548aaf7-702e-4849-a718-ca8049bff75c]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:25:53.210875 #32967] DEBUG -- : [5548aaf7-702e-4849-a718-ca8049bff75c]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:25:53.211546 #32967] DEBUG -- : [5548aaf7-702e-4849-a718-ca8049bff75c]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:25:53.212220 #32967] DEBUG -- : [5548aaf7-702e-4849-a718-ca8049bff75c]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:25:53.212890 #32967] DEBUG -- : [5548aaf7-702e-4849-a718-ca8049bff75c]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+I, [2021-03-07T20:25:53.213192 #32967]  INFO -- : [5548aaf7-702e-4849-a718-ca8049bff75c]   Rendered message_rooms/index.html.haml within layouts/application (16.3ms)
+I, [2021-03-07T20:25:53.213914 #32967]  INFO -- : [5548aaf7-702e-4849-a718-ca8049bff75c] Completed 200 OK in 25ms (Views: 19.1ms | ActiveRecord: 2.0ms)
+I, [2021-03-07T20:25:53.248685 #32967]  INFO -- : [ce7bb570-0a6e-4d62-b81f-49f6f9a0fb77] Started GET "/assets/application-56b898b5515e043122bb5f065ea88f72a8d7a19cedbcea9892e66fddea861e02.js" for 127.0.0.1 at 2021-03-07 20:25:53 -0800
+F, [2021-03-07T20:25:53.249873 #32967] FATAL -- : [ce7bb570-0a6e-4d62-b81f-49f6f9a0fb77]   
+F, [2021-03-07T20:25:53.250017 #32967] FATAL -- : [ce7bb570-0a6e-4d62-b81f-49f6f9a0fb77] ActionController::RoutingError (No route matches [GET] "/assets/application-56b898b5515e043122bb5f065ea88f72a8d7a19cedbcea9892e66fddea861e02.js"):
+F, [2021-03-07T20:25:53.250115 #32967] FATAL -- : [ce7bb570-0a6e-4d62-b81f-49f6f9a0fb77]   
+F, [2021-03-07T20:25:53.250162 #32967] FATAL -- : [ce7bb570-0a6e-4d62-b81f-49f6f9a0fb77] actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+[ce7bb570-0a6e-4d62-b81f-49f6f9a0fb77] actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[ce7bb570-0a6e-4d62-b81f-49f6f9a0fb77] railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+[ce7bb570-0a6e-4d62-b81f-49f6f9a0fb77] railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+[ce7bb570-0a6e-4d62-b81f-49f6f9a0fb77] activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[ce7bb570-0a6e-4d62-b81f-49f6f9a0fb77] activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+[ce7bb570-0a6e-4d62-b81f-49f6f9a0fb77] activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+[ce7bb570-0a6e-4d62-b81f-49f6f9a0fb77] railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+[ce7bb570-0a6e-4d62-b81f-49f6f9a0fb77] request_store (1.5.0) lib/request_store/middleware.rb:19:in `call'
+[ce7bb570-0a6e-4d62-b81f-49f6f9a0fb77] actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+[ce7bb570-0a6e-4d62-b81f-49f6f9a0fb77] rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+[ce7bb570-0a6e-4d62-b81f-49f6f9a0fb77] rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+[ce7bb570-0a6e-4d62-b81f-49f6f9a0fb77] activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+[ce7bb570-0a6e-4d62-b81f-49f6f9a0fb77] actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+[ce7bb570-0a6e-4d62-b81f-49f6f9a0fb77] rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+[ce7bb570-0a6e-4d62-b81f-49f6f9a0fb77] railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+[ce7bb570-0a6e-4d62-b81f-49f6f9a0fb77] puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+[ce7bb570-0a6e-4d62-b81f-49f6f9a0fb77] puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+[ce7bb570-0a6e-4d62-b81f-49f6f9a0fb77] puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+[ce7bb570-0a6e-4d62-b81f-49f6f9a0fb77] puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+[ce7bb570-0a6e-4d62-b81f-49f6f9a0fb77] puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+D, [2021-03-07T20:27:43.716931 #33043] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6549283951149397185);[0m
+D, [2021-03-07T20:27:43.727168 #33043] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+D, [2021-03-07T20:27:43.735968 #33043] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+D, [2021-03-07T20:27:43.738378 #33043] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2021-03-07T20:27:43.739085 #33043] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2021-03-07T20:27:43.739356 #33043] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(6549283951149397185)[0m
+I, [2021-03-07T20:27:49.415441 #33050]  INFO -- : [9e11bf86-435b-42f4-823e-8b0b7de9a2c6] Started GET "/" for 127.0.0.1 at 2021-03-07 20:27:49 -0800
+I, [2021-03-07T20:27:49.422873 #33050]  INFO -- : [9e11bf86-435b-42f4-823e-8b0b7de9a2c6] Processing by MessageRoomsController#index as HTML
+D, [2021-03-07T20:27:49.450093 #33050] DEBUG -- : [9e11bf86-435b-42f4-823e-8b0b7de9a2c6]   [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+I, [2021-03-07T20:27:49.469563 #33050]  INFO -- : [9e11bf86-435b-42f4-823e-8b0b7de9a2c6]   Rendering message_rooms/index.html.haml within layouts/application
+D, [2021-03-07T20:27:49.479176 #33050] DEBUG -- : [9e11bf86-435b-42f4-823e-8b0b7de9a2c6]   [1m[36mMessageRoom Load (0.7ms)[0m  [1m[34mSELECT "message_rooms".* FROM "message_rooms"[0m
+D, [2021-03-07T20:27:49.490984 #33050] DEBUG -- : [9e11bf86-435b-42f4-823e-8b0b7de9a2c6]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:27:49.492873 #33050] DEBUG -- : [9e11bf86-435b-42f4-823e-8b0b7de9a2c6]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:27:49.498809 #33050] DEBUG -- : [9e11bf86-435b-42f4-823e-8b0b7de9a2c6]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:27:49.499758 #33050] DEBUG -- : [9e11bf86-435b-42f4-823e-8b0b7de9a2c6]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:27:49.500599 #33050] DEBUG -- : [9e11bf86-435b-42f4-823e-8b0b7de9a2c6]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:27:49.501416 #33050] DEBUG -- : [9e11bf86-435b-42f4-823e-8b0b7de9a2c6]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:27:49.502175 #33050] DEBUG -- : [9e11bf86-435b-42f4-823e-8b0b7de9a2c6]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:27:49.502973 #33050] DEBUG -- : [9e11bf86-435b-42f4-823e-8b0b7de9a2c6]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+I, [2021-03-07T20:27:49.503336 #33050]  INFO -- : [9e11bf86-435b-42f4-823e-8b0b7de9a2c6]   Rendered message_rooms/index.html.haml within layouts/application (33.7ms)
+I, [2021-03-07T20:27:49.505724 #33050]  INFO -- : [9e11bf86-435b-42f4-823e-8b0b7de9a2c6] Completed 200 OK in 83ms (Views: 40.1ms | ActiveRecord: 12.1ms)
+I, [2021-03-07T20:27:49.538792 #33050]  INFO -- : [527a3b5b-973a-477a-a0a4-1526cd8efc23] Started GET "/assets/application-1ebbb6636bf0ee68b643dad3ce4cb95526eeb8dc162779be303a5cd46e9ef370.css" for 127.0.0.1 at 2021-03-07 20:27:49 -0800
+I, [2021-03-07T20:27:49.640732 #33050]  INFO -- : [b78ff764-7b5d-41c5-a1f0-43ba27d7aac4] Started GET "/assets/application-edceb62a53fadc0d4c42d5e9fe304640498cf8badcf9713a671d9c61342e1901.js" for 127.0.0.1 at 2021-03-07 20:27:49 -0800
+I, [2021-03-07T20:27:55.274252 #33050]  INFO -- : [ba1c929c-641d-47f8-85f6-5825d83b5a87] Started GET "/" for 127.0.0.1 at 2021-03-07 20:27:55 -0800
+I, [2021-03-07T20:27:55.275561 #33050]  INFO -- : [ba1c929c-641d-47f8-85f6-5825d83b5a87] Processing by MessageRoomsController#index as HTML
+D, [2021-03-07T20:27:55.276907 #33050] DEBUG -- : [ba1c929c-641d-47f8-85f6-5825d83b5a87]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+I, [2021-03-07T20:27:55.278198 #33050]  INFO -- : [ba1c929c-641d-47f8-85f6-5825d83b5a87]   Rendering message_rooms/index.html.haml within layouts/application
+D, [2021-03-07T20:27:55.279329 #33050] DEBUG -- : [ba1c929c-641d-47f8-85f6-5825d83b5a87]   [1m[36mMessageRoom Load (0.2ms)[0m  [1m[34mSELECT "message_rooms".* FROM "message_rooms"[0m
+D, [2021-03-07T20:27:55.280868 #33050] DEBUG -- : [ba1c929c-641d-47f8-85f6-5825d83b5a87]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:27:55.282473 #33050] DEBUG -- : [ba1c929c-641d-47f8-85f6-5825d83b5a87]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:27:55.283780 #33050] DEBUG -- : [ba1c929c-641d-47f8-85f6-5825d83b5a87]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:27:55.285194 #33050] DEBUG -- : [ba1c929c-641d-47f8-85f6-5825d83b5a87]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:27:55.287094 #33050] DEBUG -- : [ba1c929c-641d-47f8-85f6-5825d83b5a87]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:27:55.294039 #33050] DEBUG -- : [ba1c929c-641d-47f8-85f6-5825d83b5a87]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:27:55.295689 #33050] DEBUG -- : [ba1c929c-641d-47f8-85f6-5825d83b5a87]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:27:55.297523 #33050] DEBUG -- : [ba1c929c-641d-47f8-85f6-5825d83b5a87]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+I, [2021-03-07T20:27:55.298584 #33050]  INFO -- : [ba1c929c-641d-47f8-85f6-5825d83b5a87]   Rendered message_rooms/index.html.haml within layouts/application (20.3ms)
+I, [2021-03-07T20:27:55.299954 #33050]  INFO -- : [ba1c929c-641d-47f8-85f6-5825d83b5a87] Completed 200 OK in 24ms (Views: 21.5ms | ActiveRecord: 0.7ms)
+I, [2021-03-07T20:27:59.114413 #33050]  INFO -- : [ba1362a6-4427-4018-965a-e8008f1d0085] Started GET "/message_rooms/new" for 127.0.0.1 at 2021-03-07 20:27:59 -0800
+I, [2021-03-07T20:27:59.115671 #33050]  INFO -- : [ba1362a6-4427-4018-965a-e8008f1d0085] Processing by MessageRoomsController#new as HTML
+D, [2021-03-07T20:27:59.117205 #33050] DEBUG -- : [ba1362a6-4427-4018-965a-e8008f1d0085]   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+I, [2021-03-07T20:27:59.122779 #33050]  INFO -- : [ba1362a6-4427-4018-965a-e8008f1d0085]   Rendering message_rooms/new.html.haml within layouts/application
+I, [2021-03-07T20:27:59.929650 #33050]  INFO -- : [ba1362a6-4427-4018-965a-e8008f1d0085]   Rendered message_rooms/new.html.haml within layouts/application (806.7ms)
+I, [2021-03-07T20:27:59.930315 #33050]  INFO -- : [ba1362a6-4427-4018-965a-e8008f1d0085] Completed 200 OK in 815ms (Views: 807.7ms | ActiveRecord: 0.4ms)
+I, [2021-03-07T20:28:04.001750 #33050]  INFO -- : [a52fe7be-2660-4348-bff7-7ea72968e7a5] Started GET "/message_rooms" for 127.0.0.1 at 2021-03-07 20:28:04 -0800
+I, [2021-03-07T20:28:04.002455 #33050]  INFO -- : [a52fe7be-2660-4348-bff7-7ea72968e7a5] Processing by MessageRoomsController#index as HTML
+D, [2021-03-07T20:28:04.003881 #33050] DEBUG -- : [a52fe7be-2660-4348-bff7-7ea72968e7a5]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+I, [2021-03-07T20:28:04.004700 #33050]  INFO -- : [a52fe7be-2660-4348-bff7-7ea72968e7a5]   Rendering message_rooms/index.html.haml within layouts/application
+D, [2021-03-07T20:28:04.005573 #33050] DEBUG -- : [a52fe7be-2660-4348-bff7-7ea72968e7a5]   [1m[36mMessageRoom Load (0.4ms)[0m  [1m[34mSELECT "message_rooms".* FROM "message_rooms"[0m
+D, [2021-03-07T20:28:04.007687 #33050] DEBUG -- : [a52fe7be-2660-4348-bff7-7ea72968e7a5]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:28:04.009116 #33050] DEBUG -- : [a52fe7be-2660-4348-bff7-7ea72968e7a5]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:28:04.010130 #33050] DEBUG -- : [a52fe7be-2660-4348-bff7-7ea72968e7a5]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:28:04.011062 #33050] DEBUG -- : [a52fe7be-2660-4348-bff7-7ea72968e7a5]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:28:04.011926 #33050] DEBUG -- : [a52fe7be-2660-4348-bff7-7ea72968e7a5]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:28:04.012727 #33050] DEBUG -- : [a52fe7be-2660-4348-bff7-7ea72968e7a5]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:28:04.013521 #33050] DEBUG -- : [a52fe7be-2660-4348-bff7-7ea72968e7a5]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:28:04.014309 #33050] DEBUG -- : [a52fe7be-2660-4348-bff7-7ea72968e7a5]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+I, [2021-03-07T20:28:04.014642 #33050]  INFO -- : [a52fe7be-2660-4348-bff7-7ea72968e7a5]   Rendered message_rooms/index.html.haml within layouts/application (9.8ms)
+I, [2021-03-07T20:28:04.015284 #33050]  INFO -- : [a52fe7be-2660-4348-bff7-7ea72968e7a5] Completed 200 OK in 13ms (Views: 10.0ms | ActiveRecord: 1.0ms)
+I, [2021-03-07T20:28:34.257433 #33050]  INFO -- : [7c96ee1e-fc29-401b-9348-f074eb7b9ff9] Started GET "/message_rooms" for 127.0.0.1 at 2021-03-07 20:28:34 -0800
+I, [2021-03-07T20:28:34.257999 #33050]  INFO -- : [7c96ee1e-fc29-401b-9348-f074eb7b9ff9] Processing by MessageRoomsController#index as HTML
+D, [2021-03-07T20:28:34.259240 #33050] DEBUG -- : [7c96ee1e-fc29-401b-9348-f074eb7b9ff9]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+I, [2021-03-07T20:28:34.259947 #33050]  INFO -- : [7c96ee1e-fc29-401b-9348-f074eb7b9ff9]   Rendering message_rooms/index.html.haml within layouts/application
+D, [2021-03-07T20:28:34.260551 #33050] DEBUG -- : [7c96ee1e-fc29-401b-9348-f074eb7b9ff9]   [1m[36mMessageRoom Load (0.2ms)[0m  [1m[34mSELECT "message_rooms".* FROM "message_rooms"[0m
+D, [2021-03-07T20:28:34.261650 #33050] DEBUG -- : [7c96ee1e-fc29-401b-9348-f074eb7b9ff9]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:28:34.262627 #33050] DEBUG -- : [7c96ee1e-fc29-401b-9348-f074eb7b9ff9]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:28:34.263410 #33050] DEBUG -- : [7c96ee1e-fc29-401b-9348-f074eb7b9ff9]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:28:34.264162 #33050] DEBUG -- : [7c96ee1e-fc29-401b-9348-f074eb7b9ff9]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:28:34.264926 #33050] DEBUG -- : [7c96ee1e-fc29-401b-9348-f074eb7b9ff9]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:28:34.265670 #33050] DEBUG -- : [7c96ee1e-fc29-401b-9348-f074eb7b9ff9]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:28:34.266409 #33050] DEBUG -- : [7c96ee1e-fc29-401b-9348-f074eb7b9ff9]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:28:34.267154 #33050] DEBUG -- : [7c96ee1e-fc29-401b-9348-f074eb7b9ff9]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+I, [2021-03-07T20:28:34.267480 #33050]  INFO -- : [7c96ee1e-fc29-401b-9348-f074eb7b9ff9]   Rendered message_rooms/index.html.haml within layouts/application (7.5ms)
+I, [2021-03-07T20:28:34.268114 #33050]  INFO -- : [7c96ee1e-fc29-401b-9348-f074eb7b9ff9] Completed 200 OK in 10ms (Views: 7.9ms | ActiveRecord: 0.7ms)
+I, [2021-03-07T20:28:42.527662 #33066]  INFO -- : [dfb84966-de02-4c85-98c3-ca9c3f4eb506] Started GET "/message_rooms" for 127.0.0.1 at 2021-03-07 20:28:42 -0800
+I, [2021-03-07T20:28:42.534664 #33066]  INFO -- : [dfb84966-de02-4c85-98c3-ca9c3f4eb506] Processing by MessageRoomsController#index as HTML
+D, [2021-03-07T20:28:42.561020 #33066] DEBUG -- : [dfb84966-de02-4c85-98c3-ca9c3f4eb506]   [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+I, [2021-03-07T20:28:42.580677 #33066]  INFO -- : [dfb84966-de02-4c85-98c3-ca9c3f4eb506]   Rendering message_rooms/index.html.haml within layouts/application
+D, [2021-03-07T20:28:42.590477 #33066] DEBUG -- : [dfb84966-de02-4c85-98c3-ca9c3f4eb506]   [1m[36mMessageRoom Load (0.4ms)[0m  [1m[34mSELECT "message_rooms".* FROM "message_rooms"[0m
+D, [2021-03-07T20:28:42.601779 #33066] DEBUG -- : [dfb84966-de02-4c85-98c3-ca9c3f4eb506]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:28:42.603318 #33066] DEBUG -- : [dfb84966-de02-4c85-98c3-ca9c3f4eb506]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:28:42.610343 #33066] DEBUG -- : [dfb84966-de02-4c85-98c3-ca9c3f4eb506]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:28:42.611139 #33066] DEBUG -- : [dfb84966-de02-4c85-98c3-ca9c3f4eb506]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:28:42.611891 #33066] DEBUG -- : [dfb84966-de02-4c85-98c3-ca9c3f4eb506]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:28:42.612635 #33066] DEBUG -- : [dfb84966-de02-4c85-98c3-ca9c3f4eb506]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:28:42.613401 #33066] DEBUG -- : [dfb84966-de02-4c85-98c3-ca9c3f4eb506]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:28:42.614135 #33066] DEBUG -- : [dfb84966-de02-4c85-98c3-ca9c3f4eb506]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+I, [2021-03-07T20:28:42.614450 #33066]  INFO -- : [dfb84966-de02-4c85-98c3-ca9c3f4eb506]   Rendered message_rooms/index.html.haml within layouts/application (33.7ms)
+I, [2021-03-07T20:28:42.616831 #33066]  INFO -- : [dfb84966-de02-4c85-98c3-ca9c3f4eb506] Completed 200 OK in 82ms (Views: 40.6ms | ActiveRecord: 11.0ms)
+I, [2021-03-07T20:28:52.484940 #33074]  INFO -- : [01483b96-a446-4666-9b9b-9859fc113c6e] Started GET "/message_rooms" for 127.0.0.1 at 2021-03-07 20:28:52 -0800
+I, [2021-03-07T20:28:52.492861 #33074]  INFO -- : [01483b96-a446-4666-9b9b-9859fc113c6e] Processing by MessageRoomsController#index as HTML
+D, [2021-03-07T20:28:52.521020 #33074] DEBUG -- : [01483b96-a446-4666-9b9b-9859fc113c6e]   [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+I, [2021-03-07T20:28:52.541029 #33074]  INFO -- : [01483b96-a446-4666-9b9b-9859fc113c6e]   Rendering message_rooms/index.html.haml within layouts/application
+D, [2021-03-07T20:28:52.550355 #33074] DEBUG -- : [01483b96-a446-4666-9b9b-9859fc113c6e]   [1m[36mMessageRoom Load (0.4ms)[0m  [1m[34mSELECT "message_rooms".* FROM "message_rooms"[0m
+D, [2021-03-07T20:28:52.564917 #33074] DEBUG -- : [01483b96-a446-4666-9b9b-9859fc113c6e]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:28:52.566048 #33074] DEBUG -- : [01483b96-a446-4666-9b9b-9859fc113c6e]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:28:52.566766 #33074] DEBUG -- : [01483b96-a446-4666-9b9b-9859fc113c6e]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:28:52.567509 #33074] DEBUG -- : [01483b96-a446-4666-9b9b-9859fc113c6e]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:28:52.568263 #33074] DEBUG -- : [01483b96-a446-4666-9b9b-9859fc113c6e]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:28:52.569000 #33074] DEBUG -- : [01483b96-a446-4666-9b9b-9859fc113c6e]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:28:52.569767 #33074] DEBUG -- : [01483b96-a446-4666-9b9b-9859fc113c6e]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:28:52.570616 #33074] DEBUG -- : [01483b96-a446-4666-9b9b-9859fc113c6e]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+I, [2021-03-07T20:28:52.570982 #33074]  INFO -- : [01483b96-a446-4666-9b9b-9859fc113c6e]   Rendered message_rooms/index.html.haml within layouts/application (29.9ms)
+I, [2021-03-07T20:28:52.573364 #33074]  INFO -- : [01483b96-a446-4666-9b9b-9859fc113c6e] Completed 200 OK in 80ms (Views: 37.0ms | ActiveRecord: 11.1ms)
+I, [2021-03-07T20:29:56.867889 #33084]  INFO -- : [0dd40a90-c7c6-4bbe-90da-f29cd14ae2b1] Started GET "/message_rooms" for 127.0.0.1 at 2021-03-07 20:29:56 -0800
+I, [2021-03-07T20:29:56.875089 #33084]  INFO -- : [0dd40a90-c7c6-4bbe-90da-f29cd14ae2b1] Processing by MessageRoomsController#index as HTML
+D, [2021-03-07T20:29:56.902678 #33084] DEBUG -- : [0dd40a90-c7c6-4bbe-90da-f29cd14ae2b1]   [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+I, [2021-03-07T20:29:56.921095 #33084]  INFO -- : [0dd40a90-c7c6-4bbe-90da-f29cd14ae2b1]   Rendering message_rooms/index.html.haml within layouts/application
+D, [2021-03-07T20:29:56.930800 #33084] DEBUG -- : [0dd40a90-c7c6-4bbe-90da-f29cd14ae2b1]   [1m[36mMessageRoom Load (0.4ms)[0m  [1m[34mSELECT "message_rooms".* FROM "message_rooms"[0m
+D, [2021-03-07T20:29:56.941744 #33084] DEBUG -- : [0dd40a90-c7c6-4bbe-90da-f29cd14ae2b1]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:29:56.943808 #33084] DEBUG -- : [0dd40a90-c7c6-4bbe-90da-f29cd14ae2b1]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:29:56.950207 #33084] DEBUG -- : [0dd40a90-c7c6-4bbe-90da-f29cd14ae2b1]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:29:56.951049 #33084] DEBUG -- : [0dd40a90-c7c6-4bbe-90da-f29cd14ae2b1]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:29:56.951822 #33084] DEBUG -- : [0dd40a90-c7c6-4bbe-90da-f29cd14ae2b1]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:29:56.952567 #33084] DEBUG -- : [0dd40a90-c7c6-4bbe-90da-f29cd14ae2b1]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:29:56.953411 #33084] DEBUG -- : [0dd40a90-c7c6-4bbe-90da-f29cd14ae2b1]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:29:56.954195 #33084] DEBUG -- : [0dd40a90-c7c6-4bbe-90da-f29cd14ae2b1]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+I, [2021-03-07T20:29:56.954535 #33084]  INFO -- : [0dd40a90-c7c6-4bbe-90da-f29cd14ae2b1]   Rendered message_rooms/index.html.haml within layouts/application (33.4ms)
+I, [2021-03-07T20:29:56.957004 #33084]  INFO -- : [0dd40a90-c7c6-4bbe-90da-f29cd14ae2b1] Completed 200 OK in 82ms (Views: 40.2ms | ActiveRecord: 10.8ms)
+I, [2021-03-07T20:30:12.945539 #33097]  INFO -- : [af67d7f0-b6ac-4f86-977c-41b3bcb149ce] Started GET "/message_rooms" for 127.0.0.1 at 2021-03-07 20:30:12 -0800
+I, [2021-03-07T20:30:12.952909 #33097]  INFO -- : [af67d7f0-b6ac-4f86-977c-41b3bcb149ce] Processing by MessageRoomsController#index as HTML
+D, [2021-03-07T20:30:12.980604 #33097] DEBUG -- : [af67d7f0-b6ac-4f86-977c-41b3bcb149ce]   [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+I, [2021-03-07T20:30:12.999681 #33097]  INFO -- : [af67d7f0-b6ac-4f86-977c-41b3bcb149ce]   Rendering message_rooms/index.html.haml within layouts/application
+D, [2021-03-07T20:30:13.009021 #33097] DEBUG -- : [af67d7f0-b6ac-4f86-977c-41b3bcb149ce]   [1m[36mMessageRoom Load (0.5ms)[0m  [1m[34mSELECT "message_rooms".* FROM "message_rooms"[0m
+D, [2021-03-07T20:30:13.020027 #33097] DEBUG -- : [af67d7f0-b6ac-4f86-977c-41b3bcb149ce]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:30:13.021962 #33097] DEBUG -- : [af67d7f0-b6ac-4f86-977c-41b3bcb149ce]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:30:13.028303 #33097] DEBUG -- : [af67d7f0-b6ac-4f86-977c-41b3bcb149ce]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:30:13.029173 #33097] DEBUG -- : [af67d7f0-b6ac-4f86-977c-41b3bcb149ce]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:30:13.029946 #33097] DEBUG -- : [af67d7f0-b6ac-4f86-977c-41b3bcb149ce]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:30:13.030680 #33097] DEBUG -- : [af67d7f0-b6ac-4f86-977c-41b3bcb149ce]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:30:13.031419 #33097] DEBUG -- : [af67d7f0-b6ac-4f86-977c-41b3bcb149ce]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:30:13.032157 #33097] DEBUG -- : [af67d7f0-b6ac-4f86-977c-41b3bcb149ce]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+I, [2021-03-07T20:30:13.032496 #33097]  INFO -- : [af67d7f0-b6ac-4f86-977c-41b3bcb149ce]   Rendered message_rooms/index.html.haml within layouts/application (32.7ms)
+I, [2021-03-07T20:30:13.034844 #33097]  INFO -- : [af67d7f0-b6ac-4f86-977c-41b3bcb149ce] Completed 200 OK in 82ms (Views: 39.5ms | ActiveRecord: 10.7ms)
+I, [2021-03-07T20:30:38.889069 #33109]  INFO -- : [3122d510-5aa9-451f-85ec-672c77473952] Started GET "/message_rooms" for 127.0.0.1 at 2021-03-07 20:30:38 -0800
+I, [2021-03-07T20:30:38.896240 #33109]  INFO -- : [3122d510-5aa9-451f-85ec-672c77473952] Processing by MessageRoomsController#index as HTML
+D, [2021-03-07T20:30:38.922832 #33109] DEBUG -- : [3122d510-5aa9-451f-85ec-672c77473952]   [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+I, [2021-03-07T20:30:38.945603 #33109]  INFO -- : [3122d510-5aa9-451f-85ec-672c77473952]   Rendering message_rooms/index.html.haml within layouts/application
+D, [2021-03-07T20:30:38.955400 #33109] DEBUG -- : [3122d510-5aa9-451f-85ec-672c77473952]   [1m[36mMessageRoom Load (0.5ms)[0m  [1m[34mSELECT "message_rooms".* FROM "message_rooms"[0m
+D, [2021-03-07T20:30:38.967159 #33109] DEBUG -- : [3122d510-5aa9-451f-85ec-672c77473952]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:30:38.968732 #33109] DEBUG -- : [3122d510-5aa9-451f-85ec-672c77473952]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:30:38.974832 #33109] DEBUG -- : [3122d510-5aa9-451f-85ec-672c77473952]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:30:38.975782 #33109] DEBUG -- : [3122d510-5aa9-451f-85ec-672c77473952]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:30:38.976542 #33109] DEBUG -- : [3122d510-5aa9-451f-85ec-672c77473952]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:30:38.977277 #33109] DEBUG -- : [3122d510-5aa9-451f-85ec-672c77473952]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:30:38.977975 #33109] DEBUG -- : [3122d510-5aa9-451f-85ec-672c77473952]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:30:38.978683 #33109] DEBUG -- : [3122d510-5aa9-451f-85ec-672c77473952]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+I, [2021-03-07T20:30:38.978996 #33109]  INFO -- : [3122d510-5aa9-451f-85ec-672c77473952]   Rendered message_rooms/index.html.haml within layouts/application (33.3ms)
+I, [2021-03-07T20:30:38.981380 #33109]  INFO -- : [3122d510-5aa9-451f-85ec-672c77473952] Completed 200 OK in 85ms (Views: 42.8ms | ActiveRecord: 11.0ms)
+I, [2021-03-07T20:33:09.373774 #33155]  INFO -- : [55e72f5e-789d-47bd-b1d3-a893499feb39] Started GET "/message_rooms" for 127.0.0.1 at 2021-03-07 20:33:09 -0800
+I, [2021-03-07T20:33:09.381462 #33155]  INFO -- : [55e72f5e-789d-47bd-b1d3-a893499feb39] Processing by MessageRoomsController#index as HTML
+D, [2021-03-07T20:33:09.407340 #33155] DEBUG -- : [55e72f5e-789d-47bd-b1d3-a893499feb39]   [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+I, [2021-03-07T20:33:09.426821 #33155]  INFO -- : [55e72f5e-789d-47bd-b1d3-a893499feb39]   Rendering message_rooms/index.html.haml within layouts/application
+D, [2021-03-07T20:33:09.437214 #33155] DEBUG -- : [55e72f5e-789d-47bd-b1d3-a893499feb39]   [1m[36mMessageRoom Load (0.5ms)[0m  [1m[34mSELECT "message_rooms".* FROM "message_rooms"[0m
+D, [2021-03-07T20:33:09.448355 #33155] DEBUG -- : [55e72f5e-789d-47bd-b1d3-a893499feb39]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:33:09.450302 #33155] DEBUG -- : [55e72f5e-789d-47bd-b1d3-a893499feb39]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:33:09.451504 #33155] DEBUG -- : [55e72f5e-789d-47bd-b1d3-a893499feb39]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:33:09.452630 #33155] DEBUG -- : [55e72f5e-789d-47bd-b1d3-a893499feb39]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:33:09.453795 #33155] DEBUG -- : [55e72f5e-789d-47bd-b1d3-a893499feb39]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:33:09.460089 #33155] DEBUG -- : [55e72f5e-789d-47bd-b1d3-a893499feb39]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:33:09.460998 #33155] DEBUG -- : [55e72f5e-789d-47bd-b1d3-a893499feb39]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:33:09.461773 #33155] DEBUG -- : [55e72f5e-789d-47bd-b1d3-a893499feb39]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+I, [2021-03-07T20:33:09.462275 #33155]  INFO -- : [55e72f5e-789d-47bd-b1d3-a893499feb39]   Rendered message_rooms/index.html.haml within layouts/application (35.3ms)
+I, [2021-03-07T20:33:09.464847 #33155]  INFO -- : [55e72f5e-789d-47bd-b1d3-a893499feb39] Completed 200 OK in 83ms (Views: 42.6ms | ActiveRecord: 10.4ms)
+I, [2021-03-07T20:33:09.493131 #33155]  INFO -- : [9d14cc79-64d0-49f3-9d34-dcee94053f9b] Started GET "/assets/application-8c6659fea2ee47f7a1ff307d4396b7e0670b8de1bbf178fe14bea039506c0830.css" for 127.0.0.1 at 2021-03-07 20:33:09 -0800
+I, [2021-03-07T20:33:09.494945 #33155]  INFO -- : [10408caa-ce31-4789-abe1-bf6ebd5035ba] Started GET "/assets/application-2e08c5702d5cd9fe29eb4b1657ce0e413cb86ba14d328d40950daa178addf584.js" for 127.0.0.1 at 2021-03-07 20:33:09 -0800
+I, [2021-03-07T20:33:55.797010 #33165]  INFO -- : [f5aa7c2b-bb15-455e-bbe1-7d432b4df757] Started GET "/message_rooms" for 127.0.0.1 at 2021-03-07 20:33:55 -0800
+I, [2021-03-07T20:33:55.805087 #33165]  INFO -- : [f5aa7c2b-bb15-455e-bbe1-7d432b4df757] Processing by MessageRoomsController#index as HTML
+D, [2021-03-07T20:33:55.831459 #33165] DEBUG -- : [f5aa7c2b-bb15-455e-bbe1-7d432b4df757]   [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+I, [2021-03-07T20:33:55.851912 #33165]  INFO -- : [f5aa7c2b-bb15-455e-bbe1-7d432b4df757]   Rendering message_rooms/index.html.haml within layouts/application
+D, [2021-03-07T20:33:55.862192 #33165] DEBUG -- : [f5aa7c2b-bb15-455e-bbe1-7d432b4df757]   [1m[36mMessageRoom Load (0.4ms)[0m  [1m[34mSELECT "message_rooms".* FROM "message_rooms"[0m
+D, [2021-03-07T20:33:55.876632 #33165] DEBUG -- : [f5aa7c2b-bb15-455e-bbe1-7d432b4df757]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:33:55.877734 #33165] DEBUG -- : [f5aa7c2b-bb15-455e-bbe1-7d432b4df757]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:33:55.878737 #33165] DEBUG -- : [f5aa7c2b-bb15-455e-bbe1-7d432b4df757]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:33:55.879593 #33165] DEBUG -- : [f5aa7c2b-bb15-455e-bbe1-7d432b4df757]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:33:55.880361 #33165] DEBUG -- : [f5aa7c2b-bb15-455e-bbe1-7d432b4df757]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:33:55.881102 #33165] DEBUG -- : [f5aa7c2b-bb15-455e-bbe1-7d432b4df757]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:33:55.881819 #33165] DEBUG -- : [f5aa7c2b-bb15-455e-bbe1-7d432b4df757]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:33:55.882536 #33165] DEBUG -- : [f5aa7c2b-bb15-455e-bbe1-7d432b4df757]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+I, [2021-03-07T20:33:55.882847 #33165]  INFO -- : [f5aa7c2b-bb15-455e-bbe1-7d432b4df757]   Rendered message_rooms/index.html.haml within layouts/application (30.8ms)
+I, [2021-03-07T20:33:55.885332 #33165]  INFO -- : [f5aa7c2b-bb15-455e-bbe1-7d432b4df757] Completed 200 OK in 80ms (Views: 38.2ms | ActiveRecord: 10.7ms)
+I, [2021-03-07T20:34:41.994892 #33189]  INFO -- : [4ded5717-2a84-4d40-b116-559fccb2181d] Started GET "/message_rooms" for 127.0.0.1 at 2021-03-07 20:34:41 -0800
+I, [2021-03-07T20:34:42.002495 #33189]  INFO -- : [4ded5717-2a84-4d40-b116-559fccb2181d] Processing by MessageRoomsController#index as HTML
+D, [2021-03-07T20:34:42.027315 #33189] DEBUG -- : [4ded5717-2a84-4d40-b116-559fccb2181d]   [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+I, [2021-03-07T20:34:42.046775 #33189]  INFO -- : [4ded5717-2a84-4d40-b116-559fccb2181d]   Rendering message_rooms/index.html.haml within layouts/application
+D, [2021-03-07T20:34:42.055983 #33189] DEBUG -- : [4ded5717-2a84-4d40-b116-559fccb2181d]   [1m[36mMessageRoom Load (0.4ms)[0m  [1m[34mSELECT "message_rooms".* FROM "message_rooms"[0m
+D, [2021-03-07T20:34:42.070107 #33189] DEBUG -- : [4ded5717-2a84-4d40-b116-559fccb2181d]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:34:42.071217 #33189] DEBUG -- : [4ded5717-2a84-4d40-b116-559fccb2181d]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:34:42.071970 #33189] DEBUG -- : [4ded5717-2a84-4d40-b116-559fccb2181d]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:34:42.072716 #33189] DEBUG -- : [4ded5717-2a84-4d40-b116-559fccb2181d]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:34:42.073414 #33189] DEBUG -- : [4ded5717-2a84-4d40-b116-559fccb2181d]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:34:42.074161 #33189] DEBUG -- : [4ded5717-2a84-4d40-b116-559fccb2181d]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:34:42.074906 #33189] DEBUG -- : [4ded5717-2a84-4d40-b116-559fccb2181d]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:34:42.075649 #33189] DEBUG -- : [4ded5717-2a84-4d40-b116-559fccb2181d]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+I, [2021-03-07T20:34:42.075993 #33189]  INFO -- : [4ded5717-2a84-4d40-b116-559fccb2181d]   Rendered message_rooms/index.html.haml within layouts/application (29.1ms)
+I, [2021-03-07T20:34:42.078212 #33189]  INFO -- : [4ded5717-2a84-4d40-b116-559fccb2181d] Completed 200 OK in 76ms (Views: 35.9ms | ActiveRecord: 10.3ms)
+I, [2021-03-07T20:34:42.114771 #33189]  INFO -- : [1e3ea549-aba6-4781-a530-68f96b454b35] Started GET "/assets/application-edfd0bbd0849077962da2c0b3601d118224a9ce3395cd597d7dae923b21920db.js" for 127.0.0.1 at 2021-03-07 20:34:42 -0800
+I, [2021-03-07T20:35:11.738788 #33210]  INFO -- : [b9c70ad3-e826-4fd4-b43e-6d87fa5e2857] Started GET "/message_rooms" for 127.0.0.1 at 2021-03-07 20:35:11 -0800
+I, [2021-03-07T20:35:11.746803 #33210]  INFO -- : [b9c70ad3-e826-4fd4-b43e-6d87fa5e2857] Processing by MessageRoomsController#index as HTML
+D, [2021-03-07T20:35:11.773724 #33210] DEBUG -- : [b9c70ad3-e826-4fd4-b43e-6d87fa5e2857]   [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+I, [2021-03-07T20:35:11.792788 #33210]  INFO -- : [b9c70ad3-e826-4fd4-b43e-6d87fa5e2857]   Rendering message_rooms/index.html.haml within layouts/application
+D, [2021-03-07T20:35:11.803578 #33210] DEBUG -- : [b9c70ad3-e826-4fd4-b43e-6d87fa5e2857]   [1m[36mMessageRoom Load (0.4ms)[0m  [1m[34mSELECT "message_rooms".* FROM "message_rooms"[0m
+D, [2021-03-07T20:35:11.814862 #33210] DEBUG -- : [b9c70ad3-e826-4fd4-b43e-6d87fa5e2857]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:35:11.816427 #33210] DEBUG -- : [b9c70ad3-e826-4fd4-b43e-6d87fa5e2857]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:35:11.822648 #33210] DEBUG -- : [b9c70ad3-e826-4fd4-b43e-6d87fa5e2857]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:35:11.823494 #33210] DEBUG -- : [b9c70ad3-e826-4fd4-b43e-6d87fa5e2857]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:35:11.824293 #33210] DEBUG -- : [b9c70ad3-e826-4fd4-b43e-6d87fa5e2857]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:35:11.825045 #33210] DEBUG -- : [b9c70ad3-e826-4fd4-b43e-6d87fa5e2857]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:35:11.825805 #33210] DEBUG -- : [b9c70ad3-e826-4fd4-b43e-6d87fa5e2857]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:35:11.826717 #33210] DEBUG -- : [b9c70ad3-e826-4fd4-b43e-6d87fa5e2857]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+I, [2021-03-07T20:35:11.827125 #33210]  INFO -- : [b9c70ad3-e826-4fd4-b43e-6d87fa5e2857]   Rendered message_rooms/index.html.haml within layouts/application (34.2ms)
+I, [2021-03-07T20:35:11.830058 #33210]  INFO -- : [b9c70ad3-e826-4fd4-b43e-6d87fa5e2857] Completed 200 OK in 83ms (Views: 41.6ms | ActiveRecord: 11.3ms)
+I, [2021-03-07T20:35:11.854350 #33210]  INFO -- : [06f2025c-b1e9-4521-8a0e-808708a1334a] Started GET "/assets/application-e376a532a9ae242f4e850d6735584d4a75d5e8c8f2d2857cfbb2d31cd3722df3.js" for 127.0.0.1 at 2021-03-07 20:35:11 -0800
+I, [2021-03-07T20:35:29.183180 #33210]  INFO -- : [c90bfe6e-6520-4ade-87e6-189b9bf0791f] Started DELETE "/users/sign_out" for 127.0.0.1 at 2021-03-07 20:35:29 -0800
+I, [2021-03-07T20:35:29.184184 #33210]  INFO -- : [c90bfe6e-6520-4ade-87e6-189b9bf0791f] Processing by Devise::SessionsController#destroy as HTML
+I, [2021-03-07T20:35:29.184244 #33210]  INFO -- : [c90bfe6e-6520-4ade-87e6-189b9bf0791f]   Parameters: {"authenticity_token"=>"lgYPbEXFX7LTNh+8LToo9B0l42ciMDMB83a+MLiU1RysN4dsCw9ZniR3NNFBTMllXAkFAwyOmcyISf2Q54fMWg=="}
+D, [2021-03-07T20:35:29.185710 #33210] DEBUG -- : [c90bfe6e-6520-4ade-87e6-189b9bf0791f]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:35:29.189351 #33210] DEBUG -- : [c90bfe6e-6520-4ade-87e6-189b9bf0791f]   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2021-03-07T20:35:29.190180 #33210] DEBUG -- : [c90bfe6e-6520-4ade-87e6-189b9bf0791f]   [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+I, [2021-03-07T20:35:30.066199 #33210]  INFO -- : [c90bfe6e-6520-4ade-87e6-189b9bf0791f] Redirected to http://localhost:3000/
+I, [2021-03-07T20:35:30.066337 #33210]  INFO -- : [c90bfe6e-6520-4ade-87e6-189b9bf0791f] Completed 302 Found in 882ms (ActiveRecord: 0.5ms)
+I, [2021-03-07T20:35:30.069516 #33210]  INFO -- : [b0f7d35d-aedd-487d-947b-c9ac176d7cf8] Started GET "/" for 127.0.0.1 at 2021-03-07 20:35:30 -0800
+I, [2021-03-07T20:35:30.070086 #33210]  INFO -- : [b0f7d35d-aedd-487d-947b-c9ac176d7cf8] Processing by MessageRoomsController#index as HTML
+I, [2021-03-07T20:35:30.071996 #33210]  INFO -- : [b0f7d35d-aedd-487d-947b-c9ac176d7cf8] Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+I, [2021-03-07T20:35:30.077839 #33210]  INFO -- : [20858943-7cdd-422c-b61b-e575ca69d201] Started GET "/users/sign_in" for 127.0.0.1 at 2021-03-07 20:35:30 -0800
+I, [2021-03-07T20:35:30.078428 #33210]  INFO -- : [20858943-7cdd-422c-b61b-e575ca69d201] Processing by Devise::SessionsController#new as HTML
+I, [2021-03-07T20:35:30.089025 #33210]  INFO -- : [20858943-7cdd-422c-b61b-e575ca69d201]   Rendering devise/sessions/new.html.erb within layouts/application
+I, [2021-03-07T20:35:30.094138 #33210]  INFO -- : [20858943-7cdd-422c-b61b-e575ca69d201]   Rendered devise/shared/_links.html.erb (0.8ms)
+I, [2021-03-07T20:35:30.094230 #33210]  INFO -- : [20858943-7cdd-422c-b61b-e575ca69d201]   Rendered devise/sessions/new.html.erb within layouts/application (5.1ms)
+I, [2021-03-07T20:35:30.094866 #33210]  INFO -- : [20858943-7cdd-422c-b61b-e575ca69d201] Completed 200 OK in 16ms (Views: 14.9ms | ActiveRecord: 0.0ms)
+I, [2021-03-07T20:35:30.123973 #33210]  INFO -- : [3a93ea94-925f-46c8-ad19-684654dd9b53] Started GET "/assets/bootstrap.min.js" for 127.0.0.1 at 2021-03-07 20:35:30 -0800
+I, [2021-03-07T20:35:30.124974 #33210]  INFO -- : [5eb2c079-6f3b-4111-98c3-bcc2a59f2bf2] Started GET "/assets/login.css" for 127.0.0.1 at 2021-03-07 20:35:30 -0800
+I, [2021-03-07T20:35:30.126394 #33210]  INFO -- : [1e2ded03-a2d7-4ac1-8cd6-fe3572cefc80] Started GET "/assets/jquery-1.11.1.min.js" for 127.0.0.1 at 2021-03-07 20:35:30 -0800
+I, [2021-03-07T20:35:30.221431 #33210]  INFO -- : [59131347-c691-4a79-a207-c1daa50ffc7e] Started GET "/assets/chat3.png" for 127.0.0.1 at 2021-03-07 20:35:30 -0800
+I, [2021-03-07T20:35:37.324181 #33210]  INFO -- : [db068c8f-9a32-423c-ba19-8f82a7eb9e80] Started POST "/users/sign_in" for 127.0.0.1 at 2021-03-07 20:35:37 -0800
+I, [2021-03-07T20:35:37.324872 #33210]  INFO -- : [db068c8f-9a32-423c-ba19-8f82a7eb9e80] Processing by Devise::SessionsController#create as HTML
+I, [2021-03-07T20:35:37.324937 #33210]  INFO -- : [db068c8f-9a32-423c-ba19-8f82a7eb9e80]   Parameters: {"utf8"=>"✓", "authenticity_token"=>"zS6WErSW4/bNUq6+4G4dikg772essqKe9qItGyzgE/6TRGVCr3p8+wdmanBX0bF4tmGUILUvrniT0AuPg8veuw==", "user"=>{"email"=>"b@yahoo.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+D, [2021-03-07T20:35:37.327390 #33210] DEBUG -- : [db068c8f-9a32-423c-ba19-8f82a7eb9e80]   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "b@yahoo.com"], ["LIMIT", 1]]
+I, [2021-03-07T20:35:37.452265 #33210]  INFO -- : [db068c8f-9a32-423c-ba19-8f82a7eb9e80] Redirected to http://localhost:3000/
+I, [2021-03-07T20:35:37.452382 #33210]  INFO -- : [db068c8f-9a32-423c-ba19-8f82a7eb9e80] Completed 302 Found in 127ms (ActiveRecord: 0.4ms)
+I, [2021-03-07T20:35:37.455366 #33210]  INFO -- : [61a5573e-c0d2-422d-81dd-713d22462faa] Started GET "/" for 127.0.0.1 at 2021-03-07 20:35:37 -0800
+I, [2021-03-07T20:35:37.455813 #33210]  INFO -- : [61a5573e-c0d2-422d-81dd-713d22462faa] Processing by MessageRoomsController#index as HTML
+D, [2021-03-07T20:35:37.456845 #33210] DEBUG -- : [61a5573e-c0d2-422d-81dd-713d22462faa]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+I, [2021-03-07T20:35:37.457490 #33210]  INFO -- : [61a5573e-c0d2-422d-81dd-713d22462faa]   Rendering message_rooms/index.html.haml within layouts/application
+D, [2021-03-07T20:35:37.458012 #33210] DEBUG -- : [61a5573e-c0d2-422d-81dd-713d22462faa]   [1m[36mMessageRoom Load (0.2ms)[0m  [1m[34mSELECT "message_rooms".* FROM "message_rooms"[0m
+D, [2021-03-07T20:35:37.458900 #33210] DEBUG -- : [61a5573e-c0d2-422d-81dd-713d22462faa]   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:35:37.459616 #33210] DEBUG -- : [61a5573e-c0d2-422d-81dd-713d22462faa]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:35:37.460227 #33210] DEBUG -- : [61a5573e-c0d2-422d-81dd-713d22462faa]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:35:37.460799 #33210] DEBUG -- : [61a5573e-c0d2-422d-81dd-713d22462faa]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:35:37.461401 #33210] DEBUG -- : [61a5573e-c0d2-422d-81dd-713d22462faa]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:35:37.462041 #33210] DEBUG -- : [61a5573e-c0d2-422d-81dd-713d22462faa]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:35:37.462645 #33210] DEBUG -- : [61a5573e-c0d2-422d-81dd-713d22462faa]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:35:37.463279 #33210] DEBUG -- : [61a5573e-c0d2-422d-81dd-713d22462faa]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+I, [2021-03-07T20:35:37.463584 #33210]  INFO -- : [61a5573e-c0d2-422d-81dd-713d22462faa]   Rendered message_rooms/index.html.haml within layouts/application (6.0ms)
+I, [2021-03-07T20:35:37.464254 #33210]  INFO -- : [61a5573e-c0d2-422d-81dd-713d22462faa] Completed 200 OK in 8ms (Views: 6.6ms | ActiveRecord: 0.6ms)
+I, [2021-03-07T20:35:40.136399 #33210]  INFO -- : [a9b5e2a1-09c6-460d-ad07-eb5b56c4ebde] Started GET "/message_rooms/2" for 127.0.0.1 at 2021-03-07 20:35:40 -0800
+I, [2021-03-07T20:35:40.137214 #33210]  INFO -- : [a9b5e2a1-09c6-460d-ad07-eb5b56c4ebde] Processing by MessageRoomsController#show as HTML
+I, [2021-03-07T20:35:40.137279 #33210]  INFO -- : [a9b5e2a1-09c6-460d-ad07-eb5b56c4ebde]   Parameters: {"id"=>"2"}
+D, [2021-03-07T20:35:40.138911 #33210] DEBUG -- : [a9b5e2a1-09c6-460d-ad07-eb5b56c4ebde]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:35:40.140523 #33210] DEBUG -- : [a9b5e2a1-09c6-460d-ad07-eb5b56c4ebde]   [1m[36mMessageRoom Load (0.2ms)[0m  [1m[34mSELECT  "message_rooms".* FROM "message_rooms" WHERE "message_rooms"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+D, [2021-03-07T20:35:40.141577 #33210] DEBUG -- : [a9b5e2a1-09c6-460d-ad07-eb5b56c4ebde]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:35:40.145850 #33210] DEBUG -- : [a9b5e2a1-09c6-460d-ad07-eb5b56c4ebde]   [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."message_room_id" = $1[0m  [["message_room_id", 2]]
+I, [2021-03-07T20:35:40.148507 #33210]  INFO -- : [a9b5e2a1-09c6-460d-ad07-eb5b56c4ebde]   Rendering message_rooms/show.html.haml within layouts/application
+I, [2021-03-07T20:35:40.150125 #33210]  INFO -- : [a9b5e2a1-09c6-460d-ad07-eb5b56c4ebde]   Rendered message_rooms/show.html.haml within layouts/application (1.5ms)
+I, [2021-03-07T20:35:40.150868 #33210]  INFO -- : [a9b5e2a1-09c6-460d-ad07-eb5b56c4ebde] Completed 200 OK in 13ms (Views: 2.5ms | ActiveRecord: 2.0ms)
+I, [2021-03-07T20:35:40.182711 #33210]  INFO -- : [e81fe52c-1880-4b20-9d4f-9f34904bb358] Started GET "/cable" for 127.0.0.1 at 2021-03-07 20:35:40 -0800
+I, [2021-03-07T20:35:40.206186 #33210]  INFO -- : [e81fe52c-1880-4b20-9d4f-9f34904bb358] Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-03-07 20:35:40 -0800
+I, [2021-03-07T20:35:40.206262 #33210]  INFO -- : [e81fe52c-1880-4b20-9d4f-9f34904bb358] Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+D, [2021-03-07T20:35:40.211065 #33210] DEBUG -- :   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+I, [2021-03-07T20:35:40.211545 #33210]  INFO -- : [ActionCable] [b@yahoo.com] Registered connection (Z2lkOi8vd2VsY29tZS10ZWNoLWNoYXQtYXBwL1VzZXIvMQ)
+I, [2021-03-07T20:36:17.023853 #33226]  INFO -- : [8297f1ea-30d3-45a4-bb7b-f66603eb7563] Started GET "/message_rooms" for 127.0.0.1 at 2021-03-07 20:36:17 -0800
+I, [2021-03-07T20:36:17.032315 #33226]  INFO -- : [8297f1ea-30d3-45a4-bb7b-f66603eb7563] Processing by MessageRoomsController#index as HTML
+D, [2021-03-07T20:36:17.058153 #33226] DEBUG -- : [8297f1ea-30d3-45a4-bb7b-f66603eb7563]   [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+I, [2021-03-07T20:36:17.079063 #33226]  INFO -- : [8297f1ea-30d3-45a4-bb7b-f66603eb7563]   Rendering message_rooms/index.html.haml within layouts/application
+D, [2021-03-07T20:36:17.088843 #33226] DEBUG -- : [8297f1ea-30d3-45a4-bb7b-f66603eb7563]   [1m[36mMessageRoom Load (0.4ms)[0m  [1m[34mSELECT "message_rooms".* FROM "message_rooms"[0m
+D, [2021-03-07T20:36:17.100407 #33226] DEBUG -- : [8297f1ea-30d3-45a4-bb7b-f66603eb7563]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:36:17.101892 #33226] DEBUG -- : [8297f1ea-30d3-45a4-bb7b-f66603eb7563]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:36:17.108807 #33226] DEBUG -- : [8297f1ea-30d3-45a4-bb7b-f66603eb7563]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:36:17.109664 #33226] DEBUG -- : [8297f1ea-30d3-45a4-bb7b-f66603eb7563]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:36:17.110463 #33226] DEBUG -- : [8297f1ea-30d3-45a4-bb7b-f66603eb7563]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:36:17.111258 #33226] DEBUG -- : [8297f1ea-30d3-45a4-bb7b-f66603eb7563]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:36:17.111989 #33226] DEBUG -- : [8297f1ea-30d3-45a4-bb7b-f66603eb7563]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:36:17.112719 #33226] DEBUG -- : [8297f1ea-30d3-45a4-bb7b-f66603eb7563]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+I, [2021-03-07T20:36:17.113034 #33226]  INFO -- : [8297f1ea-30d3-45a4-bb7b-f66603eb7563]   Rendered message_rooms/index.html.haml within layouts/application (33.9ms)
+I, [2021-03-07T20:36:17.115397 #33226]  INFO -- : [8297f1ea-30d3-45a4-bb7b-f66603eb7563] Completed 200 OK in 83ms (Views: 41.4ms | ActiveRecord: 10.0ms)
+I, [2021-03-07T20:36:19.686735 #33226]  INFO -- : [ea214832-bea7-4552-bdd3-3827aaa9ca80] Started GET "/message_rooms/1" for 127.0.0.1 at 2021-03-07 20:36:19 -0800
+I, [2021-03-07T20:36:19.687428 #33226]  INFO -- : [ea214832-bea7-4552-bdd3-3827aaa9ca80] Processing by MessageRoomsController#show as HTML
+I, [2021-03-07T20:36:19.687489 #33226]  INFO -- : [ea214832-bea7-4552-bdd3-3827aaa9ca80]   Parameters: {"id"=>"1"}
+D, [2021-03-07T20:36:19.689186 #33226] DEBUG -- : [ea214832-bea7-4552-bdd3-3827aaa9ca80]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:36:19.690507 #33226] DEBUG -- : [ea214832-bea7-4552-bdd3-3827aaa9ca80]   [1m[36mMessageRoom Load (0.2ms)[0m  [1m[34mSELECT  "message_rooms".* FROM "message_rooms" WHERE "message_rooms"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:36:19.691345 #33226] DEBUG -- : [ea214832-bea7-4552-bdd3-3827aaa9ca80]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:36:19.695399 #33226] DEBUG -- : [ea214832-bea7-4552-bdd3-3827aaa9ca80]   [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."message_room_id" = $1[0m  [["message_room_id", 1]]
+I, [2021-03-07T20:36:19.697969 #33226]  INFO -- : [ea214832-bea7-4552-bdd3-3827aaa9ca80]   Rendering message_rooms/show.html.haml within layouts/application
+I, [2021-03-07T20:36:19.699337 #33226]  INFO -- : [ea214832-bea7-4552-bdd3-3827aaa9ca80]   Rendered message_rooms/show.html.haml within layouts/application (1.3ms)
+I, [2021-03-07T20:36:19.699942 #33226]  INFO -- : [ea214832-bea7-4552-bdd3-3827aaa9ca80] Completed 200 OK in 12ms (Views: 2.1ms | ActiveRecord: 2.0ms)
+I, [2021-03-07T20:36:19.735111 #33226]  INFO -- : [369e2206-8c0c-4e23-826d-009ae8bc578c] Started GET "/cable" for 127.0.0.1 at 2021-03-07 20:36:19 -0800
+I, [2021-03-07T20:36:19.759421 #33226]  INFO -- : [369e2206-8c0c-4e23-826d-009ae8bc578c] Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-03-07 20:36:19 -0800
+I, [2021-03-07T20:36:19.759522 #33226]  INFO -- : [369e2206-8c0c-4e23-826d-009ae8bc578c] Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+D, [2021-03-07T20:36:19.763926 #33226] DEBUG -- :   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+I, [2021-03-07T20:36:19.768920 #33226]  INFO -- : [ActionCable] [b@yahoo.com] Registered connection (Z2lkOi8vd2VsY29tZS10ZWNoLWNoYXQtYXBwL1VzZXIvMQ)
+I, [2021-03-07T20:39:20.454507 #33273]  INFO -- : [7db65487-eade-4dfc-879e-e5b96d6e7153] Started GET "/message_rooms" for 127.0.0.1 at 2021-03-07 20:39:20 -0800
+I, [2021-03-07T20:39:20.462297 #33273]  INFO -- : [7db65487-eade-4dfc-879e-e5b96d6e7153] Processing by MessageRoomsController#index as HTML
+D, [2021-03-07T20:39:20.488601 #33273] DEBUG -- : [7db65487-eade-4dfc-879e-e5b96d6e7153]   [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+I, [2021-03-07T20:39:20.509065 #33273]  INFO -- : [7db65487-eade-4dfc-879e-e5b96d6e7153]   Rendering message_rooms/index.html.haml within layouts/application
+D, [2021-03-07T20:39:20.518910 #33273] DEBUG -- : [7db65487-eade-4dfc-879e-e5b96d6e7153]   [1m[36mMessageRoom Load (0.5ms)[0m  [1m[34mSELECT "message_rooms".* FROM "message_rooms"[0m
+D, [2021-03-07T20:39:20.533415 #33273] DEBUG -- : [7db65487-eade-4dfc-879e-e5b96d6e7153]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:39:20.534488 #33273] DEBUG -- : [7db65487-eade-4dfc-879e-e5b96d6e7153]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:39:20.535226 #33273] DEBUG -- : [7db65487-eade-4dfc-879e-e5b96d6e7153]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:39:20.535999 #33273] DEBUG -- : [7db65487-eade-4dfc-879e-e5b96d6e7153]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:39:20.536846 #33273] DEBUG -- : [7db65487-eade-4dfc-879e-e5b96d6e7153]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:39:20.537646 #33273] DEBUG -- : [7db65487-eade-4dfc-879e-e5b96d6e7153]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:39:20.538398 #33273] DEBUG -- : [7db65487-eade-4dfc-879e-e5b96d6e7153]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:39:20.539136 #33273] DEBUG -- : [7db65487-eade-4dfc-879e-e5b96d6e7153]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+I, [2021-03-07T20:39:20.539489 #33273]  INFO -- : [7db65487-eade-4dfc-879e-e5b96d6e7153]   Rendered message_rooms/index.html.haml within layouts/application (30.3ms)
+I, [2021-03-07T20:39:20.541875 #33273]  INFO -- : [7db65487-eade-4dfc-879e-e5b96d6e7153] Completed 200 OK in 79ms (Views: 36.9ms | ActiveRecord: 11.1ms)
+I, [2021-03-07T20:39:22.785737 #33273]  INFO -- : [d4b50826-5706-4ec3-9573-ec31d6f686f7] Started GET "/message_rooms/1" for 127.0.0.1 at 2021-03-07 20:39:22 -0800
+I, [2021-03-07T20:39:22.786474 #33273]  INFO -- : [d4b50826-5706-4ec3-9573-ec31d6f686f7] Processing by MessageRoomsController#show as HTML
+I, [2021-03-07T20:39:22.786536 #33273]  INFO -- : [d4b50826-5706-4ec3-9573-ec31d6f686f7]   Parameters: {"id"=>"1"}
+D, [2021-03-07T20:39:22.787954 #33273] DEBUG -- : [d4b50826-5706-4ec3-9573-ec31d6f686f7]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:39:22.789017 #33273] DEBUG -- : [d4b50826-5706-4ec3-9573-ec31d6f686f7]   [1m[36mMessageRoom Load (0.2ms)[0m  [1m[34mSELECT  "message_rooms".* FROM "message_rooms" WHERE "message_rooms"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:39:22.789901 #33273] DEBUG -- : [d4b50826-5706-4ec3-9573-ec31d6f686f7]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2021-03-07T20:39:22.794078 #33273] DEBUG -- : [d4b50826-5706-4ec3-9573-ec31d6f686f7]   [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."message_room_id" = $1[0m  [["message_room_id", 1]]
+I, [2021-03-07T20:39:22.797028 #33273]  INFO -- : [d4b50826-5706-4ec3-9573-ec31d6f686f7]   Rendering message_rooms/show.html.haml within layouts/application
+I, [2021-03-07T20:39:22.798441 #33273]  INFO -- : [d4b50826-5706-4ec3-9573-ec31d6f686f7]   Rendered message_rooms/show.html.haml within layouts/application (1.3ms)
+I, [2021-03-07T20:39:22.799026 #33273]  INFO -- : [d4b50826-5706-4ec3-9573-ec31d6f686f7] Completed 200 OK in 12ms (Views: 2.2ms | ActiveRecord: 2.1ms)
+I, [2021-03-07T20:39:22.835373 #33273]  INFO -- : [4bb3e379-6d8d-4dce-8726-6041d2c957a6] Started GET "/cable" for 127.0.0.1 at 2021-03-07 20:39:22 -0800
+I, [2021-03-07T20:39:22.857403 #33273]  INFO -- : [4bb3e379-6d8d-4dce-8726-6041d2c957a6] Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2021-03-07 20:39:22 -0800
+I, [2021-03-07T20:39:22.857474 #33273]  INFO -- : [4bb3e379-6d8d-4dce-8726-6041d2c957a6] Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+D, [2021-03-07T20:39:22.861911 #33273] DEBUG -- :   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+I, [2021-03-07T20:39:22.866966 #33273]  INFO -- : [ActionCable] [b@yahoo.com] Registered connection (Z2lkOi8vd2VsY29tZS10ZWNoLWNoYXQtYXBwL1VzZXIvMQ)
+D, [2021-03-07T20:39:58.892948 #33301] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6549283951149397185);[0m
+D, [2021-03-07T20:39:58.902413 #33301] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+D, [2021-03-07T20:39:58.910123 #33301] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+D, [2021-03-07T20:39:58.912436 #33301] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2021-03-07T20:39:58.913054 #33301] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2021-03-07T20:39:58.913258 #33301] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(6549283951149397185)[0m
