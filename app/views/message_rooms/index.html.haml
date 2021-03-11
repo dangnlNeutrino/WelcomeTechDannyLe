@@ -4,10 +4,8 @@
   %small
     = link_to 'New message room', new_message_room_path, class: 'btn btn-primary btn-sx'
 
-%table.table.cell-border{:role=>'datatable', :class =>'display responsive no-wrap table table-striped table-bordered', :style =>"width:100%"}
-  %thead
+%table.table.table-hove%thead
     %tr
-      %th Title
       %th Title
       %th Owner
       %th Date Created
@@ -15,8 +13,6 @@
   %tbody
     - @message_rooms.each do |message_room|
       %tr
-        %td
-          = message_room.get_room_name
         %td
           = message_room.get_room_name
         %td
