@@ -42,12 +42,18 @@ rake db:migrate
 start rails server: rails server or rails s
 ```
 
-## Approach
+## Approach | Architecture
 * Full-featured chat application using Ruby on Rails back-end and ReactJS front-end. Integrated with PostGreSQL and Redis for asynchronous features and users management.
 
 * User management features: sign-up, JWT authentication, forgot password.
 
 * Front-end and back-end integration with Redis, ActionCable for async chat. (Can be integrated w/ RestAPI as well.)
+
+![plot](img/ActionCable.png)
+
+![plot](img/ChatApp.jpg)
+
+![plot](img/Serializers.jpg)
 
 ## Deployment Instruction
 
