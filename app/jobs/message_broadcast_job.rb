@@ -1,9 +1,10 @@
 class MessageBroadcastJob < ApplicationJob
   queue_as :messages
 
-  #serialize the message, makes it easier to handle in React
-  #@params: message_id [id] The id of a given message
-  #@return: broadcast of the serialized message via ActionCable
+  #serialize the message to be handled by React
+  #broadcast of the serialized message via ActionCable
+  #@params: message_id [ID] The id of a given message
+  #@return: nil
   def perform(message_id)
     message = Message.find_by(id: message_id)
 

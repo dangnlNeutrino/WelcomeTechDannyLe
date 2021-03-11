@@ -1,4 +1,5 @@
 class MessageRoomDecorator < Draper::Decorator
+	#Automatically delegates instance methods to the source object
   	delegate_all
 
 	# Define presentation-specific methods here. Helpers are accessed through
@@ -14,16 +15,16 @@ class MessageRoomDecorator < Draper::Decorator
 	  end
 	end
 
-	#grab the owner the object
+	#get the owner the message room object
 	#@params: Nil
-	#@returns: concatinated string by first and last name
+	#@returns: the email of the owner of the message room 
 	def owner
 		return object.user.email
 	end
 
-	#grab the owner the object
+	#get the name of the message room the object
 	#@params: Nil
-	#@returns: concatinated string by first and last name
+	#@returns room_name [String]: the name of the given message room
 	def get_room_name
 		return object.room_name
 	end

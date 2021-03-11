@@ -51,6 +51,8 @@ start rails server: rails server or rails s
 
 ![plot](img/ActionCable.png)
 
+![plot](img/Channels.png)
+
 ![plot](img/ChatApp.jpg)
 
 ![plot](img/Serializers.jpg)
