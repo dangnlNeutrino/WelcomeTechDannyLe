@@ -14,6 +14,8 @@ class MessageRoomsChannel < ApplicationCable::Channel
   end
 
   #send message to other users in message room
+  #@params data [String] The message being sent
+  
   def send_message(data)
     message = current_user.messages.create(body: data['body'], message_room_id: data['message_room_id'])
     if message.errors.present?

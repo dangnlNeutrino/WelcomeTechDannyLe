@@ -41,7 +41,7 @@ class MessageRoom extends React.Component {
       },
       received: ({type, data}) => {
         switch (type) {
-          case 'test_message':
+          case 'new_message':
             this.newMessage(data);
             break;
           case 'errors':
