@@ -17,7 +17,7 @@ class MessageRoomsChannel < ApplicationCable::Channel
   def send_message(data)
     message = current_user.messages.create(body: data['body'], message_room_id: data['message_room_id'])
     if message.errors.present?
-      transmit({type: 'errors', data: message.errors.full_messages})
+      #transmit({type: 'errors', data: message.errors.full_messages})
     else
       MessageBroadcastJob.perform_later(message.id)
     end
