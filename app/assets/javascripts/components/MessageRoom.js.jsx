@@ -44,7 +44,7 @@ class MessageRoom extends React.Component {
           case 'new_message':
             this.newMessage(data);
             break;
-          case 'errors':
+          case 'errors234':
             this.addErrors(data);
             break;
           default:
@@ -62,6 +62,7 @@ class MessageRoom extends React.Component {
   form(){
     return (
       <div className="col-sm-12">
+        {this.errorMessages()}
         <form className="form-inline" onSubmit={ this.postMessage.bind(this) }>
           <div className="form-group col-sm-11">
             <input style={{width: "100%"}} ref="body" type="text" className="form-control" placeholder="Text..." />
